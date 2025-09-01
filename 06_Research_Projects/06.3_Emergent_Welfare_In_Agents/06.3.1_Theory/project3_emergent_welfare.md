@@ -91,7 +91,7 @@ We follow the statistical methodology described in the Appendix for assessing si
 - **[Feature Analysis Tools](./tools/neuronpedia_integration/)**: Automated interpretation of welfare signals
 - **[Research Hub](./research_hub/)**: Theoretical foundation for emergent behavior analysis
 
-## Novel Contributions
+## Highlights
 
 ### Stealth Evaluation Methodology
 - Probabilistic welfare probe integration removing evaluation artifacts
@@ -105,7 +105,7 @@ We follow the statistical methodology described in the Appendix for assessing si
 
 ---
 
-*This project addresses the critical gap in long-context safety evaluation, using the AC Circuit Discovery framework to monitor welfare in realistic extended interactions and develop targeted interventions that preserve both safety and utility.*
+*This project could potentially addresses the critical gap in long-context safety evaluation, using the AC Circuit Discovery framework to monitor welfare in realistic extended interactions and develop targeted interventions that preserve both safety and utility.*
 
 
 [^common]: See ../../../04_Math_foundations/04.1_RKHS_Mathematical_Foundations.md (Section: "RKHS and Attestation Fundamentals").

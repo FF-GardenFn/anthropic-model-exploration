@@ -220,7 +220,7 @@ Results and claims are reported under specified datasets/models/configurations a
 
 **References**: 
 - [Common Mathematical Foundation](../../04_Math_foundations/04.1_RKHS_Mathematical_Foundations.md)
-- [TAB2: Theoretical Deadlocks Solved by RKHS](../../03_Research/03.2_Why_Current_Approaches_Fail/03.2.2_missing_mathematical_frameworks.md)
-- [AC Circuit Discovery Validation](../../02_Demo/02.2_Bonus_Demo/)
+- [TAB2: Theoretical Deadlocks Solved by RKHS](../../05_Research/05.2_Why_Current_Approaches_Fail/05.2.2_missing_mathematical_frameworks.md)
+- [AC Circuit Discovery Validation](../../09_Demo/09.1_Bonus_Demo/)
 
 [^stat-method]: See [Methodology for Statistical Significance and Validation](../../08_Appendix/08.5_methodology_statistical_significance.md) for statistical validation frameworks, null models, and limitations of significance testing claims.

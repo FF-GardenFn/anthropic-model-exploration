@@ -45,9 +45,9 @@ When a research paradigm encounters **significant mathematical constraints**, in
 
 This mathematical analysis establishes the formal necessity for **fundamentally different computational paradigms** that eliminate rather than manage the identified impossibility barriers. The theoretical frameworks examined in subsequent sections provide systematic approaches to this architectural challenge:
 
-**Connection to Bidirectional Attention (Section 3.3)**: The **OLS-attention equivalence framework** may offer mathematical tools for addressing opacity and superposition constraints through **kernel ridge regression** with **symmetric regularization**. Bidirectional dynamics suggest mutual verification architectures that could potentially address the mesa-optimization detection challenges documented here.
+**Connection to Bidirectional Attention (Section 5.3)**: The **OLS-attention equivalence framework** may offer mathematical tools for addressing opacity and superposition constraints through **kernel ridge regression** with **symmetric regularization**. Bidirectional dynamics suggest mutual verification architectures that could potentially address the mesa-optimization detection challenges documented here.
 
-**Connection to Field-Theoretic Computing (Section 3.5)**: The constraint analysis suggests potential value in **continuous computational frameworks** where field equations may provide alternative approaches to discrete computation constraints. **Spline-theoretic approaches** may enable compositional transparency and boundary value optimization that could address the limitations identified in this analysis.
+**Connection to Field-Theoretic Computing (Section 5.5)**: The constraint analysis suggests potential value in **continuous computational frameworks** where field equations may provide alternative approaches to discrete computation constraints. **Spline-theoretic approaches** may enable compositional transparency and boundary value optimization that could address the limitations identified in this analysis.
 
 ---
 
