@@ -1,0 +1,210 @@
+Layer: 10, Feature: 1006804, Description:  references
+Layer: 10, Feature: 1010933, Description:  the first word of a paragraph or title
+Layer: 10, Feature: 1012232, Description:  code-related statements and whitespace
+Layer: 10, Feature: 1014174, Description: left curly brackets
+Layer: 10, Feature: 1002343, Description:  phrases related to scientific jargon, formulas, and processes
+Layer: 10, Feature: 1005351, Description: Java import statements referencing com.tencent.mm
+Layer: 10, Feature: 1009043, Description:  mathematical equations and related terms
+Layer: 10, Feature: 1013682, Description:  LaTeX, math and code snippets, and database queries
+Layer: 10, Feature: 1003837, Description:  content related to scientific publications or medical procedures, possibly extracting patient data from research papers
+Layer: 10, Feature: 1009336, Description:  code snippets that use command-line arguments
+Layer: 10, Feature: 1007048, Description:  code-related terms such as file paths, libraries, protocols, and build instructions.
+Layer: 10, Feature: 1000589, Description:  postal codes or addresses
+Layer: 10, Feature: 1000831, Description:  words and phrases related to software and version numbers
+Layer: 10, Feature: 1002037, Description:  strings related to files, code, and technical computing environments with emphasis on filenames, releases and components.
+Layer: 10, Feature: 1002892, Description: abbreviations or names
+Layer: 10, Feature: 1006734, Description:  scientific references with numbers
+Layer: 11, Feature: 1109183, Description:  large empty spaces in the text
+Layer: 11, Feature: 1100192, Description: command line and IRC-related code snippets
+Layer: 11, Feature: 1102624, Description: code snippets
+Layer: 11, Feature: 1101407, Description:  code snippets with command line instructions and path names
+Layer: 11, Feature: 1102624, Description: code snippets
+Layer: 11, Feature: 1102005, Description:  a variety of acronyms and notations related to math, programming, or organizations
+Layer: 11, Feature: 1101361, Description: a seemingly arbitrary selection of words.
+Layer: 11, Feature: 1102276, Description:  legal jargon found in court documents
+Layer: 11, Feature: 1112816, Description:  references to codes, numbered lists, addresses, and contact information.
+Layer: 12, Feature: 1212493, Description:  words that end in "ing", "ecti", "tial", or "ogi", and also the word "gauge"
+Layer: 12, Feature: 1210658, Description: dashes adjacent to other punctuation, numbers, or symbols
+Layer: 12, Feature: 1212812, Description:  code related to installing and running python
+Layer: 12, Feature: 1203376, Description: file extensions, file paths and file names
+Layer: 12, Feature: 1206599, Description: command line options and code
+Layer: 12, Feature: 1214296, Description:  code related formatting like underscores, hyphens, and forward slashes in a specific pattern
+Layer: 12, Feature: 1210721, Description:  specific alphanumeric codes or lab designations
+Layer: 12, Feature: 1215770, Description:  what are likely database memory register locations with numbers and hyphens
+Layer: 12, Feature: 1216341, Description:  sequences of numbers and sometimes other characters such as hyphens
+Layer: 13, Feature: 1314388, Description:  frequent english words appearing within scientific text
+Layer: 13, Feature: 1303466, Description: filenames for PNG image files, especially within HTML tags.
+Layer: 13, Feature: 1306280, Description:  code-related terms and syntax
+Layer: 13, Feature: 1313413, Description:  file extensions and code-related terms
+Layer: 13, Feature: 1308397, Description: code-related tokens, especially those defining functions or structures.
+Layer: 13, Feature: 1301578, Description:  strings of digits and special characters
+Layer: 13, Feature: 1306681, Description:  file paths, labels, and specific delimiters in code or data files
+Layer: 14, Feature: 1401344, Description:  character strings that represent file paths
+Layer: 14, Feature: 1403560, Description:  code snippets
+Layer: 14, Feature: 1410128, Description:  coding commands and references to code or shell environments
+Layer: 14, Feature: 1400407, Description:  mathematical expressions and potentially some sort of identifiers
+Layer: 14, Feature: 1413595, Description:  filepaths, names of files with extensions, and other code-related strings.
+Layer: 14, Feature: 1403654, Description:  command line arguments and file extensions.
+Layer: 14, Feature: 1400368, Description:  underscores followed by capital letters or digits within code
+Layer: 14, Feature: 1404850, Description:  web addresses, image tags, and directory paths
+Layer: 14, Feature: 1408833, Description:  large numbers related to legal citations
+Layer: 15, Feature: 1500851, Description:  code documentation blocks in various programming languages
+Layer: 15, Feature: 1505590, Description:  commands
+Layer: 15, Feature: 1503824, Description:  words and short phrases related to data, Apple, and online accounts
+Layer: 15, Feature: 1504400, Description:  file system paths and image extensions
+Layer: 15, Feature: 1505110, Description:  references to file formats or downloadable files.
+Layer: 15, Feature: 1505590, Description:  commands
+Layer: 15, Feature: 1500145, Description: code snippets or command-line arguments
+Layer: 15, Feature: 1505590, Description:  commands
+Layer: 15, Feature: 1512042, Description:  programming code and file paths
+Layer: 15, Feature: 1503405, Description:  code snippets, file paths, and version numbers, likely in a configuration file or script.
+Layer: 15, Feature: 1514507, Description:  numbers
+Layer: 15, Feature: 1504770, Description: references to legal cases and statutes by identifying patterns of digits
+Layer: 15, Feature: 1505125, Description:  references to numbers between 6 and 7
+Layer: 15, Feature: 1510805, Description:  mathematical formulas and expressions
+Layer: 15, Feature: 1512670, Description:  terms, names, and jargon related to software, computers, and the internet, often in the context of updates and versions.
+Layer: 15, Feature: 1516334, Description: numbers in code or math problems
+Layer: 15, Feature: 1502531, Description:  code and version numbers
+Layer: 15, Feature: 1503849, Description:  numerical digits within various data formats
+Layer: 15, Feature: 1510805, Description:  mathematical formulas and expressions
+Layer: 15, Feature: 1511207, Description:  numbers, especially model or serial numbers
+Layer: 15, Feature: 1512472, Description: words associated with legal, academic, or technical documents, and numerical references
+Layer: 15, Feature: 1512670, Description:  terms, names, and jargon related to software, computers, and the internet, often in the context of updates and versions.
+Layer: 15, Feature: 1516334, Description: numbers in code or math problems
+Layer: 16, Feature: 1611880, Description: code/file paths
+Layer: 16, Feature: 1603271, Description: Code and file paths
+Layer: 16, Feature: 1614214, Description: -
+Layer: 16, Feature: 1600043, Description: 0
+Layer: 16, Feature: 1605814, Description: 0 or 9
+Layer: 16, Feature: 1609120, Description: scientific publications
+Layer: 16, Feature: 1609943, Description: numbers
+Layer: 16, Feature: 1614437, Description: Legal citations
+Layer: 16, Feature: 1603211, Description: code and URLs
+Layer: 16, Feature: 1604954, Description: numbers
+Layer: 16, Feature: 1605559, Description: Code and references
+Layer: 16, Feature: 1609943, Description: numbers
+Layer: 16, Feature: 1612753, Description: code and software
+Layer: 17, Feature: 1706269, Description: command-line scripts
+Layer: 17, Feature: 1707740, Description: F
+Layer: 17, Feature: 1702270, Description: code
+Layer: 17, Feature: 1703418, Description: Medical studies and trials
+Layer: 17, Feature: 1705487, Description: Microsoft
+Layer: 17, Feature: 1706269, Description: command-line scripts
+Layer: 17, Feature: 1713244, Description: Command-line options/flags
+Layer: 17, Feature: 1714520, Description: file extensions
+Layer: 17, Feature: 1714455, Description: hyphen
+Layer: 17, Feature: 1705487, Description: Microsoft
+Layer: 17, Feature: 1707037, Description: Software code/versions
+Layer: 17, Feature: 1705572, Description: Figures and plots in papers
+Layer: 17, Feature: 1715326, Description: my
+Layer: 17, Feature: 1707037, Description: Software code/versions
+Layer: 17, Feature: 1707037, Description: Software code/versions
+Layer: 17, Feature: 1704273, Description: Technical discussions and code fragments
+Layer: 17, Feature: 1705487, Description: Microsoft
+Layer: 17, Feature: 1707037, Description: Software code/versions
+Layer: 17, Feature: 1702127, Description: numbers
+Layer: 17, Feature: 1703405, Description: code and URLs
+Layer: 17, Feature: 1704741, Description: Code/math text
+Layer: 17, Feature: 1705487, Description: Microsoft
+Layer: 17, Feature: 1707037, Description: Software code/versions
+Layer: 17, Feature: 1708232, Description: numbers
+Layer: 17, Feature: 1713238, Description: Code and identifiers
+Layer: 10, Feature: -1, Description: Err: mlp " atility"
+Layer: 10, Feature: -1, Description: Err: mlp "  -"
+Layer: 10, Feature: -1, Description: Err: mlp " f"
+Layer: 10, Feature: -1, Description: Err: mlp "  memory"
+Layer: 10, Feature: -1, Description: Err: mlp " d"
+Layer: 10, Feature: -1, Description: Err: mlp " mp"
+Layer: 10, Feature: -1, Description: Err: mlp "  --"
+Layer: 10, Feature: -1, Description: Err: mlp " profile"
+Layer: 10, Feature: -1, Description: Err: mlp " ="
+Layer: 10, Feature: -1, Description: Err: mlp " Win"
+Layer: 10, Feature: -1, Description: Err: mlp " 0"
+Layer: 10, Feature: -1, Description: Err: mlp " 4"
+Layer: 10, Feature: -1, Description: Err: mlp " _"
+Layer: 10, Feature: -1, Description: Err: mlp " 8"
+Layer: 10, Feature: -1, Description: Err: mlp " 3"
+Layer: 10, Feature: -1, Description: Err: mlp " 6"
+Layer: 10, Feature: -1, Description: Err: mlp " 2"
+Layer: 11, Feature: -1, Description: Err: mlp " f"
+Layer: 11, Feature: -1, Description: Err: mlp "  memory"
+Layer: 11, Feature: -1, Description: Err: mlp " mp"
+Layer: 11, Feature: -1, Description: Err: mlp "  --"
+Layer: 11, Feature: -1, Description: Err: mlp " profile"
+Layer: 11, Feature: -1, Description: Err: mlp " ="
+Layer: 11, Feature: -1, Description: Err: mlp " Win"
+Layer: 11, Feature: -1, Description: Err: mlp " 0"
+Layer: 11, Feature: -1, Description: Err: mlp " 4"
+Layer: 11, Feature: -1, Description: Err: mlp " _"
+Layer: 11, Feature: -1, Description: Err: mlp " 1"
+Layer: 11, Feature: -1, Description: Err: mlp " 8"
+Layer: 11, Feature: -1, Description: Err: mlp " 3"
+Layer: 11, Feature: -1, Description: Err: mlp " 6"
+Layer: 11, Feature: -1, Description: Err: mlp " 2"
+Layer: 12, Feature: -1, Description: Err: mlp " atility"
+Layer: 12, Feature: -1, Description: Err: mlp "  -"
+Layer: 12, Feature: -1, Description: Err: mlp " f"
+Layer: 12, Feature: -1, Description: Err: mlp "  memory"
+Layer: 12, Feature: -1, Description: Err: mlp " mp"
+Layer: 12, Feature: -1, Description: Err: mlp "  --"
+Layer: 12, Feature: -1, Description: Err: mlp " profile"
+Layer: 12, Feature: -1, Description: Err: mlp " ="
+Layer: 12, Feature: -1, Description: Err: mlp " 0"
+Layer: 12, Feature: -1, Description: Err: mlp " 4"
+Layer: 12, Feature: -1, Description: Err: mlp " _"
+Layer: 12, Feature: -1, Description: Err: mlp " 8"
+Layer: 12, Feature: -1, Description: Err: mlp " 6"
+Layer: 12, Feature: -1, Description: Err: mlp " 2"
+Layer: 13, Feature: -1, Description: Err: mlp "  -"
+Layer: 13, Feature: -1, Description: Err: mlp " f"
+Layer: 13, Feature: -1, Description: Err: mlp "  memory"
+Layer: 13, Feature: -1, Description: Err: mlp " mp"
+Layer: 13, Feature: -1, Description: Err: mlp "  --"
+Layer: 13, Feature: -1, Description: Err: mlp " profile"
+Layer: 13, Feature: -1, Description: Err: mlp " ="
+Layer: 13, Feature: -1, Description: Err: mlp " 0"
+Layer: 13, Feature: -1, Description: Err: mlp " 4"
+Layer: 13, Feature: -1, Description: Err: mlp " _"
+Layer: 13, Feature: -1, Description: Err: mlp " 8"
+Layer: 13, Feature: -1, Description: Err: mlp " 6"
+Layer: 13, Feature: -1, Description: Err: mlp " 2"
+Layer: 14, Feature: -1, Description: Err: mlp " atility"
+Layer: 14, Feature: -1, Description: Err: mlp "  -"
+Layer: 14, Feature: -1, Description: Err: mlp " f"
+Layer: 14, Feature: -1, Description: Err: mlp " mp"
+Layer: 14, Feature: -1, Description: Err: mlp "  --"
+Layer: 14, Feature: -1, Description: Err: mlp " profile"
+Layer: 14, Feature: -1, Description: Err: mlp " 0"
+Layer: 14, Feature: -1, Description: Err: mlp " 4"
+Layer: 14, Feature: -1, Description: Err: mlp " _"
+Layer: 14, Feature: -1, Description: Err: mlp " 1"
+Layer: 14, Feature: -1, Description: Err: mlp " 8"
+Layer: 14, Feature: -1, Description: Err: mlp " 6"
+Layer: 14, Feature: -1, Description: Err: mlp " 2"
+Layer: 15, Feature: -1, Description: Err: mlp " mp"
+Layer: 15, Feature: -1, Description: Err: mlp "  --"
+Layer: 15, Feature: -1, Description: Err: mlp " profile"
+Layer: 15, Feature: -1, Description: Err: mlp " 0"
+Layer: 15, Feature: -1, Description: Err: mlp " 4"
+Layer: 15, Feature: -1, Description: Err: mlp " _"
+Layer: 15, Feature: -1, Description: Err: mlp " 6"
+Layer: 15, Feature: -1, Description: Err: mlp " 2"
+Layer: 16, Feature: -1, Description: Err: mlp " f"
+Layer: 16, Feature: -1, Description: Err: mlp " mp"
+Layer: 16, Feature: -1, Description: Err: mlp "  --"
+Layer: 16, Feature: -1, Description: Err: mlp " 0"
+Layer: 16, Feature: -1, Description: Err: mlp " 4"
+Layer: 16, Feature: -1, Description: Err: mlp " _"
+Layer: 16, Feature: -1, Description: Err: mlp " 8"
+Layer: 16, Feature: -1, Description: Err: mlp " 6"
+Layer: 16, Feature: -1, Description: Err: mlp " 2"
+Layer: 17, Feature: -1, Description: Err: mlp " f"
+Layer: 17, Feature: -1, Description: Err: mlp " mp"
+Layer: 17, Feature: -1, Description: Err: mlp "  --"
+Layer: 17, Feature: -1, Description: Err: mlp " profile"
+Layer: 17, Feature: -1, Description: Err: mlp " 0"
+Layer: 17, Feature: -1, Description: Err: mlp " 4"
+Layer: 17, Feature: -1, Description: Err: mlp " _"
+Layer: 17, Feature: -1, Description: Err: mlp " 3"
+Layer: 17, Feature: -1, Description: Err: mlp " 6"
+Layer: 17, Feature: -1, Description: Err: mlp " 2"

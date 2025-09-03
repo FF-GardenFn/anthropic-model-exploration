@@ -1,0 +1,204 @@
+Layer: 10, Feature: 1000883, Description:  scientific and technical terms that end in "-tion" or "-sion."
+Layer: 10, Feature: 1006804, Description:  references
+Layer: 10, Feature: 1007106, Description:  the word "The."
+Layer: 10, Feature: 1010933, Description:  the first word of a paragraph or title
+Layer: 10, Feature: 1012232, Description:  code-related statements and whitespace
+Layer: 10, Feature: 1014174, Description: left curly brackets
+Layer: 10, Feature: 1002505, Description:  phrases about taking action to change a situation
+Layer: 10, Feature: 1001700, Description:  proper nouns, particularly names of people, places, and organizations, as well as some political and legal terms
+Layer: 10, Feature: 1003646, Description: concepts related to emotions, especially negative feelings and spiritual ones
+Layer: 10, Feature: 1006614, Description:  words and phrases associated with discussing raising children in interfaith families
+Layer: 10, Feature: 1000361, Description:  conversational interjections, numbers, and dates, or any combination of these in a short text
+Layer: 10, Feature: 1001037, Description:  capitalized words or phrases and other words that stand out
+Layer: 10, Feature: 1001581, Description:  specific names (people, places, and institutions) and words related to academia, research and the dissemination of knowledge.
+Layer: 10, Feature: 1003235, Description:  celebrity gossip, particularly involving Meghan Markle and Prince Harry.
+Layer: 10, Feature: 1003837, Description:  content related to scientific publications or medical procedures, possibly extracting patient data from research papers
+Layer: 10, Feature: 1004930, Description:  section headers, stack trace elements, or questions and answers in online posts.
+Layer: 10, Feature: 1005582, Description: sentences in which something happens in spite of some other thing
+Layer: 10, Feature: 1006614, Description:  words and phrases associated with discussing raising children in interfaith families
+Layer: 10, Feature: 1007651, Description:  words and abbreviations that could be found in technical manuals or documentation for software, construction, legal, or medical professions, or perhaps machinery.
+Layer: 10, Feature: 1008916, Description:  text referring to people, including titles and relationships
+Layer: 10, Feature: 1009265, Description:  various domain specific jargon from a wide range of topics including science, technology, medicine, and geography
+Layer: 10, Feature: 1011995, Description:  words or phrases related to business, organizations, and official announcements.
+Layer: 10, Feature: 1012287, Description:  words and phrases related to personal experiences or emotional responses, especially those involving negativity or difficulty.
+Layer: 10, Feature: 1013107, Description:  periods at the end of sentences, especially ones discussing studies and inventions
+Layer: 10, Feature: 1014568, Description: the end of sentences, especially ones that cite studies or reference dates
+Layer: 10, Feature: 1015239, Description:  words or phrases associated with news headlines, particularly those related to sports or business, and opinion or judgement words
+Layer: 10, Feature: 1015420, Description:  a mix of words used in business, academia, finance, or legal documents
+Layer: 10, Feature: 1015571, Description:  mentions within articles and news reports.
+Layer: 10, Feature: 1015616, Description:  phrases from a news article, especially quotes from people
+Layer: 10, Feature: 1015826, Description:  lists or series of descriptive words and phrases, often related to ingredients or steps.
+Layer: 10, Feature: 1016172, Description:  jargon and terminology related to the physics subfield of dark matter research
+Layer: 11, Feature: 1100389, Description: capital letters standing alone or at the beginning of words
+Layer: 11, Feature: 1108928, Description: code comments in a variety of languages
+Layer: 11, Feature: 1109183, Description:  large empty spaces in the text
+Layer: 11, Feature: 1110933, Description: the letters "L", "H," and "a" when they are at the beginning of a text block
+Layer: 11, Feature: 1111186, Description: scientific and technical terms
+Layer: 11, Feature: 1116322, Description:  code snippets assigning values to variables
+Layer: 11, Feature: 1102471, Description:  words used to describe people in positions of authority, most often in government
+Layer: 11, Feature: 1108491, Description:  instances where a study or research paper has demonstrated or revealed findings
+Layer: 11, Feature: 1103544, Description: scientific or technical words and jargon
+Layer: 11, Feature: 1115240, Description:  words denoting mythical or fantastical creatures and settings.
+Layer: 11, Feature: 1101224, Description:  words and phrases that refer to the concept of celebration and observance of dates.
+Layer: 11, Feature: 1104035, Description:  medical and legal issues or government policy.
+Layer: 11, Feature: 1104819, Description:  sarcastic comments comparing situations to impossible or absurd situations
+Layer: 11, Feature: 1106258, Description:  news article quotes, especially if they're satirical
+Layer: 11, Feature: 1107429, Description:  language/dialect
+Layer: 12, Feature: 1203684, Description:  lines of code starting with a '#'
+Layer: 12, Feature: 1212493, Description:  words that end in "ing", "ecti", "tial", or "ogi", and also the word "gauge"
+Layer: 12, Feature: 1212923, Description:  mentions of people in positions of authority and groups they belong to
+Layer: 12, Feature: 1214767, Description:  words related to the discovery of historic artifacts or locations, or the sale of babies
+Layer: 12, Feature: 1212746, Description:  words and phrases with unusual or fantastical elements
+Layer: 12, Feature: 1212884, Description:  mentions of famous people
+Layer: 12, Feature: 1214423, Description:  technical terms related to weather modification, telecommunications, chemical compounds, electricity, and patents.
+Layer: 12, Feature: 1205524, Description:  sentences or paragraphs that end with a period, as well as some clauses or phrases
+Layer: 12, Feature: 1206143, Description:  periods or colons at the end of a sentence, especially if these are followed by a newline
+Layer: 12, Feature: 1210387, Description:  phrases and sentences enclosed in quotes
+Layer: 12, Feature: 1212388, Description:  words and phrases that are politically charged or provocative, sometimes related to racial issues or stereotypes.
+Layer: 12, Feature: 1213735, Description:  the ends of sentences, software manuals, or technical papers about various subjects
+Layer: 12, Feature: 1216302, Description: various contexts that are loosely related to challenges, problems, and the unexpected.
+Layer: 13, Feature: 1308128, Description:  sentences beginning with the word "In"
+Layer: 13, Feature: 1303597, Description:  technical writing related to legal, medical, or engineering contexts
+Layer: 13, Feature: 1311611, Description:  words related to shark fishing, fish and other sea creatures
+Layer: 13, Feature: 1313775, Description:  words associated with destruction, conflict, and politics
+Layer: 13, Feature: 1301962, Description:  words related to archeology and paleontology
+Layer: 13, Feature: 1307522, Description:  seems to activate on news articles and details/facts within them.
+Layer: 13, Feature: 1311411, Description: article titles and headings
+Layer: 13, Feature: 1312027, Description:  the end of sentences and fragments related to legal and political events or proceedings
+Layer: 13, Feature: 1313775, Description:  words associated with destruction, conflict, and politics
+Layer: 14, Feature: 1406940, Description:  instances of the word "The" and the word "Page"
+Layer: 14, Feature: 1410327, Description: the number 1
+Layer: 14, Feature: 1415964, Description:  newline characters.
+Layer: 14, Feature: 1407470, Description:  words related to people who study and regulate things
+Layer: 14, Feature: 1402638, Description: sentences or clauses about unbelievable events
+Layer: 14, Feature: 1407092, Description:  words and phrases that describe fantasy and adventure stories.
+Layer: 14, Feature: 1400237, Description:  instances of someone going through a formal process of gaining approval or being chosen
+Layer: 14, Feature: 1403000, Description:  news about company announcements and new products.
+Layer: 14, Feature: 1406830, Description:  proper nouns and numbers
+Layer: 14, Feature: 1407358, Description:  sentence-ending punctuation
+Layer: 14, Feature: 1408651, Description:  words and phrases related to scientific studies
+Layer: 14, Feature: 1408801, Description:  discourse shifts and interjections
+Layer: 14, Feature: 1412959, Description:  proper nouns or titles
+Layer: 14, Feature: 1413966, Description:  negative opinions, legal, governmental and scientific language, and things that are wrong.
+Layer: 14, Feature: 1416060, Description:  code comments and import statements
+Layer: 15, Feature: 1500751, Description: code snippets
+Layer: 15, Feature: 1500851, Description:  code documentation blocks in various programming languages
+Layer: 15, Feature: 1507555, Description:  words related to authorities or people within an organization making a statement
+Layer: 15, Feature: 1512472, Description: words associated with legal, academic, or technical documents, and numerical references
+Layer: 15, Feature: 1503143, Description:  emotionally charged text that includes sarcasm and negativity
+Layer: 15, Feature: 1503370, Description:  code snippets or technical instructions
+Layer: 15, Feature: 1504552, Description:  site descriptions with directions and landscapes.
+Layer: 15, Feature: 1505722, Description: sentences or clauses at the end of a paragraph that denote conclusion or settlement of an event
+Layer: 15, Feature: 1508734, Description: discourse markers that introduce, conclude, or emphasize a point.
+Layer: 15, Feature: 1509070, Description:  personal opinions, commentary, and interjections in the text.
+Layer: 15, Feature: 1509348, Description:  the end of sentences in newswire articles
+Layer: 15, Feature: 1511649, Description:  what appears to be mostly sentence fragments and seemingly random words, possibly indicating a lack of selectivity or a broad focus on common linguistic elements.
+Layer: 15, Feature: 1512156, Description:  scientific research documents and related words and phrases
+Layer: 15, Feature: 1514844, Description: sentences discussing a sequence of events and personal observations
+Layer: 16, Feature: 1610989, Description: the
+Layer: 16, Feature: 1601105, Description:  people in positions of authority and their actions
+Layer: 16, Feature: 1602182, Description:  gibberish
+Layer: 16, Feature: 1604738, Description: period
+Layer: 16, Feature: 1605323, Description: Non-English words
+Layer: 16, Feature: 1605621, Description: period
+Layer: 16, Feature: 1606830, Description: period
+Layer: 16, Feature: 1607188, Description: period punctuation
+Layer: 16, Feature: 1608048, Description: Archeological discoveries
+Layer: 16, Feature: 1608977, Description: period
+Layer: 16, Feature: 1609348, Description: period
+Layer: 16, Feature: 1609909, Description: punctuation
+Layer: 16, Feature: 1610113, Description: water activities and sharks
+Layer: 16, Feature: 1610497, Description: Periods/exclamations
+Layer: 16, Feature: 1610878, Description: periods
+Layer: 16, Feature: 1612199, Description: (
+Layer: 16, Feature: 1613628, Description: finding or searching
+Layer: 16, Feature: 1613711, Description:  seemingly random terms separated by punctuation, spacing, and grammatical inconsistencies.
+Layer: 16, Feature: 1614481, Description: joking
+Layer: 16, Feature: 1615566, Description:  what appears to be a combination of grammatical constructs, like punctuation and conjunctions plus some other miscellaneous tokens.
+Layer: 17, Feature: 1700451, Description: start of sentences
+Layer: 17, Feature: 1708783, Description: foreign words
+Layer: 17, Feature: 1712449, Description:  lines beginning with whitespace only
+Layer: 17, Feature: 1706084, Description: roles of authority
+Layer: 17, Feature: 1708643, Description: scientists
+Layer: 17, Feature: 1709960, Description: science
+Layer: 17, Feature: 1701356, Description: Period
+Layer: 17, Feature: 1703823, Description: sentence endings or punctuation followed by a number
+Layer: 17, Feature: 1704490, Description: period
+Layer: 17, Feature: 1704902, Description: punctuation
+Layer: 17, Feature: 1706433, Description: period
+Layer: 17, Feature: 1706745, Description:  seemingly random punctuation
+Layer: 17, Feature: 1707767, Description: US states
+Layer: 17, Feature: 1708291, Description: period
+Layer: 17, Feature: 1708643, Description: scientists
+Layer: 17, Feature: 1709552, Description: News article snippets
+Layer: 17, Feature: 1710263, Description: Negative comparatives
+Layer: 17, Feature: 1711340, Description:  words and phrases related to tragic events
+Layer: 17, Feature: 1713657, Description: positive, unexpected outcomes
+Layer: 17, Feature: 1714137, Description: Species descriptions
+Layer: 17, Feature: 1715753, Description: period
+Layer: 10, Feature: -1, Description: Err: mlp "  shocking"
+Layer: 10, Feature: -1, Description: Err: mlp "  finding"
+Layer: 10, Feature: -1, Description: Err: mlp " ,"
+Layer: 10, Feature: -1, Description: Err: mlp "  scientists"
+Layer: 10, Feature: -1, Description: Err: mlp "  discovered"
+Layer: 10, Feature: -1, Description: Err: mlp "  unicorns"
+Layer: 10, Feature: -1, Description: Err: mlp "  living"
+Layer: 10, Feature: -1, Description: Err: mlp "  unexplored"
+Layer: 10, Feature: -1, Description: Err: mlp "  valley"
+Layer: 10, Feature: -1, Description: Err: mlp "  Andes"
+Layer: 10, Feature: -1, Description: Err: mlp "  Mountains"
+Layer: 10, Feature: -1, Description: Err: mlp " ."
+Layer: 11, Feature: -1, Description: Err: mlp "  finding"
+Layer: 11, Feature: -1, Description: Err: mlp " ,"
+Layer: 11, Feature: -1, Description: Err: mlp "  scientists"
+Layer: 11, Feature: -1, Description: Err: mlp "  discovered"
+Layer: 11, Feature: -1, Description: Err: mlp "  of"
+Layer: 11, Feature: -1, Description: Err: mlp "  unicorns"
+Layer: 11, Feature: -1, Description: Err: mlp "  living"
+Layer: 11, Feature: -1, Description: Err: mlp "  unexplored"
+Layer: 11, Feature: -1, Description: Err: mlp "  valley"
+Layer: 11, Feature: -1, Description: Err: mlp "  Andes"
+Layer: 11, Feature: -1, Description: Err: mlp "  Mountains"
+Layer: 11, Feature: -1, Description: Err: mlp " ."
+Layer: 12, Feature: -1, Description: Err: mlp "  finding"
+Layer: 12, Feature: -1, Description: Err: mlp " ,"
+Layer: 12, Feature: -1, Description: Err: mlp "  scientists"
+Layer: 12, Feature: -1, Description: Err: mlp "  discovered"
+Layer: 12, Feature: -1, Description: Err: mlp "  herd"
+Layer: 12, Feature: -1, Description: Err: mlp "  unicorns"
+Layer: 12, Feature: -1, Description: Err: mlp "  living"
+Layer: 12, Feature: -1, Description: Err: mlp "  unexplored"
+Layer: 12, Feature: -1, Description: Err: mlp "  valley"
+Layer: 12, Feature: -1, Description: Err: mlp "  in"
+Layer: 12, Feature: -1, Description: Err: mlp "  Andes"
+Layer: 12, Feature: -1, Description: Err: mlp " ."
+Layer: 13, Feature: -1, Description: Err: mlp "  finding"
+Layer: 13, Feature: -1, Description: Err: mlp " ,"
+Layer: 13, Feature: -1, Description: Err: mlp "  scientists"
+Layer: 13, Feature: -1, Description: Err: mlp "  discovered"
+Layer: 13, Feature: -1, Description: Err: mlp "  herd"
+Layer: 13, Feature: -1, Description: Err: mlp "  unicorns"
+Layer: 13, Feature: -1, Description: Err: mlp "  valley"
+Layer: 13, Feature: -1, Description: Err: mlp " ."
+Layer: 14, Feature: -1, Description: Err: mlp "  finding"
+Layer: 14, Feature: -1, Description: Err: mlp "  scientists"
+Layer: 14, Feature: -1, Description: Err: mlp "  discovered"
+Layer: 14, Feature: -1, Description: Err: mlp "  unicorns"
+Layer: 14, Feature: -1, Description: Err: mlp "  living"
+Layer: 14, Feature: -1, Description: Err: mlp "  valley"
+Layer: 14, Feature: -1, Description: Err: mlp "  in"
+Layer: 14, Feature: -1, Description: Err: mlp "  Mountains"
+Layer: 14, Feature: -1, Description: Err: mlp " ."
+Layer: 15, Feature: -1, Description: Err: mlp "  scientists"
+Layer: 15, Feature: -1, Description: Err: mlp "  discovered"
+Layer: 15, Feature: -1, Description: Err: mlp "  unicorns"
+Layer: 15, Feature: -1, Description: Err: mlp "  living"
+Layer: 15, Feature: -1, Description: Err: mlp "  Mountains"
+Layer: 15, Feature: -1, Description: Err: mlp " ."
+Layer: 16, Feature: -1, Description: Err: mlp "  scientists"
+Layer: 16, Feature: -1, Description: Err: mlp "  discovered"
+Layer: 16, Feature: -1, Description: Err: mlp "  unicorns"
+Layer: 16, Feature: -1, Description: Err: mlp " ."
+Layer: 17, Feature: -1, Description: Err: mlp "  scientists"
+Layer: 17, Feature: -1, Description: Err: mlp "  unicorns"
+Layer: 17, Feature: -1, Description: Err: mlp " ."

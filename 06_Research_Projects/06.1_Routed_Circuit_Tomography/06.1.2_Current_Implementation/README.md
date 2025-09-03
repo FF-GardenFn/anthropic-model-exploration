@@ -89,7 +89,7 @@ The implementation successfully demonstrates:
 - **Mathematical Validation**: RKHS eigenvalue significance - ✓ *Implemented and validated*
 
 ### Kill-Switch Criteria
-**Status**: ✅ **Criteria Met** - Multiple circuit candidates demonstrate:
+**Status**: Criteria met — Multiple circuit candidates demonstrate:
 - Statistical eigenvalue significance (reference λ₁ = 572.71)
 - Mathematical stability through spectral gap analysis  
 - Integration with 7.7σ validation framework
