@@ -1,4 +1,12 @@
+---
+tags: [FM01, FM04, FM05, FM06, FM07, FM08, FM09, FM10, FM11, FM12, FM13, FM14, LIM-OPACITY, LIM-SUPERPOSITION, LIM-OBJ-MISALIGN, AUX-DECEPTIVE-ALIGNMENT, AUX-EVAL-GAMING, AUX-EMERGENCE-DEBT]
+---
+
 # Research Projects: Mathematical Foundations for Model Exploration
+
+![Status](https://img.shields.io/badge/status-Production_Ready-green)
+![Projects](https://img.shields.io/badge/projects-RCT_PCC_EWA-blue)
+![Failure Modes](https://img.shields.io/badge/addresses-11_of_14_modes-orange)
 
 > Summary: Three research directions building on RKHS circuit analysis for welfare applications
 

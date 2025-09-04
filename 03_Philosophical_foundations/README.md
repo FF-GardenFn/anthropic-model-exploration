@@ -1,4 +1,14 @@
+---
+tags: [LIM-OPACITY, LIM-SUPERPOSITION, LIM-OBJ-MISALIGN, FM04, FM05, FM13]
+---
+
 # Philosophical Foundations
+
+![Status](https://img.shields.io/badge/Status-Theoretical_Foundations-blue)
+![Theory](https://img.shields.io/badge/Theory-PLSA_Framework-green)
+![Framework](https://img.shields.io/badge/Framework-Morphemic_Field_Theory-orange)
+![Integration](https://img.shields.io/badge/Bridge-Mathematical_Foundations-purple)
+![Scope](https://img.shields.io/badge/Scope-Speculative_Frameworks-yellow)
 
 This directory contains exploratory theoretical frameworks for examining language model behavior through the lens of continuous mathematics and semantic field dynamics. These investigations represent preliminary conceptual explorations rather than established theoretical results, designed to motivate and ground the mathematical analysis that follows.
 

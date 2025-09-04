@@ -4,7 +4,7 @@
 
 The QCGI experiment compares classical and quantum-hybrid architectures on self-referential logical tasks to test whether quantum coherence enables qualitatively different semantic integration and Gödelian insight.
 
-> Reviewer toggle: Heavy Python snippets have been moved to 07.2_QCGI/07.2.2_Implementation/qcgi_proposal_snippets.py. Theory here is supportive and optional; see THEORY_INCLUSION_NOTE.md for rationale and toggling guidance.
+> Reviewer toggle: Heavy Python snippets have been moved to 07.2_QCGI/07.2.2_Implementation/qcgi_proposal_snippets.py. Theory here is supportive and optional; see ../THEORY_INCLUSION_NOTE.md for rationale and toggling guidance.
 
 ## Theoretical Foundation
 
@@ -39,7 +39,7 @@ From Volume III, consciousness requires:
 ## Quantum-Hybrid Module Design
 
 ### Architecture
-Reference: 07.2_QCGI/07.2.2_Implementation/qcgi_proposal_snippets.py — class: QuantumHybridModule
+Reference: ./07.2.2_Implementation/qcgi_proposal_snippets.py — class: QuantumHybridModule
 
 ### Key Properties
 1. **Coherence Maintenance**: Preserves quantum-like superposition
@@ -88,7 +88,7 @@ What can you conclude about P and Q?
 
 Using Topological MI framework to analyze internal semantic fields:
 
-Reference: 07.2_QCGI/07.2.2_Implementation/qcgi_proposal_snippets.py — function: analyze_semantic_field
+Reference: ./07.2.2_Implementation/qcgi_proposal_snippets.py — function: analyze_semantic_field
 
 ### Predictions
 
@@ -144,7 +144,7 @@ Reference: 07.2_QCGI/07.2.2_Implementation/qcgi_proposal_snippets.py — equatio
 
 ### Phase 3: Semantic Field Analysis (Week 5-6)
 
-Reference: 07.2_QCGI/07.2.2_Implementation/qcgi_proposal_snippets.py — function: run_semantic_field_analysis
+Reference: ./07.2.2_Implementation/qcgi_proposal_snippets.py — function: run_semantic_field_analysis
 
 ### Phase 4: Controlled Variations (Week 7-8)
 
@@ -186,7 +186,7 @@ Target: d > 1.5 (very large effect)
 ### Quantum Simulation Options
 
 **Option 1: Qiskit Backend**
-Reference: 07.2_QCGI/07.2.2_Implementation/qcgi_proposal_snippets.py — function: quantum_layer
+Reference: ./07.2.2_Implementation/qcgi_proposal_snippets.py — function: quantum_layer
 
 **Option 2: Differentiable Approximation**
 Reference: 07.2_QCGI/07.2.2_Implementation/qcgi_proposal_snippets.py — function: quantum_proxy

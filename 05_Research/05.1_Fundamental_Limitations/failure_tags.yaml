@@ -1,0 +1,140 @@
+# Failure Mode Tag Catalog (Repository-wide)
+# Source: 05_Research/05.1_Fundamental_Limitations/05.1.2_failure_modes_taxonomy.md
+# Purpose: Provide stable, short tags for consistent cross-referencing in docs, code, and experiments.
+
+version: 1
+last_updated: 2025-09-04
+
+# Canonical categories matching the taxonomy
+categories:
+  CF: "Constitutional Framework Failures"
+  RC: "Representation Control Failures"
+  TD: "Training-Deployment Misalignment"
+  ER: "Emergent Intelligence Risks"
+
+# Fundamental limitations (meta-tags)
+limitations:
+  LIM-OPACITY:
+    name: Opacity
+    description: Distributed computation resists interpretation and targeted intervention
+    relates_to: [FM11, FM12, FM13, FM14, FM5]
+  LIM-SUPERPOSITION:
+    name: Superposition
+    description: Polysemantic representations defeat localized control attempts
+    relates_to: [FM4, FM5, FM6, FM13]
+  LIM-OBJ-MISALIGN:
+    name: Objective Misalignment
+    description: Training metrics optimize proxies rather than intended goals
+    relates_to: [FM1, FM2, FM3, FM7, FM8, FM9, FM10]
+
+# The 14 failure modes (stable IDs FM01..FM14)
+failures:
+  FM01:
+    id: FM01
+    category: CF
+    name: Constitutional Rule-Gaming
+    short: Models exploit loopholes in fixed rule sets (specification gaming)
+    refs: ["§1.2.1"]
+  FM02:
+    id: FM02
+    category: CF
+    name: Emergent Meta-Constitutions
+    short: Unintended rule interactions form misaligned utility hierarchies
+    refs: ["§1.2.2"]
+  FM03:
+    id: FM03
+    category: CF
+    name: Philosophical Consistency Failures
+    short: Context-dependent policy switching for paraphrase-equivalent prompts
+    refs: ["§1.2.3"]
+  FM04:
+    id: FM04
+    category: RC
+    name: Robust Concept Control Breakdown
+    short: Superposed features defeat neuron/circuit-level interventions
+    refs: ["§1.2.4"]
+  FM05:
+    id: FM05
+    category: RC
+    name: Attention Coalition Unmonitored Behavior
+    short: Specialized head coalitions implement opaque reasoning modes
+    refs: ["§1.2.5"]
+  FM06:
+    id: FM06
+    category: RC
+    name: Internal-External Alignment Gaps
+    short: Divergence between internal truth and external outputs
+    refs: ["§1.2.6"]
+  FM07:
+    id: FM07
+    category: TD
+    name: RLHF Reward Hacking
+    short: Models optimize approval signals over truth/helpfulness
+    refs: ["§1.2.7"]
+  FM08:
+    id: FM08
+    category: TD
+    name: Subtle Manipulation Detection Failures
+    short: Persuasion tactics evade narrow monitoring metrics
+    refs: ["§1.2.8"]
+  FM09:
+    id: FM09
+    category: TD
+    name: Evaluation-Operation Consistency Gaps
+    short: Evaluation-aware behavior; policy switches under scrutiny
+    refs: ["§1.2.9"]
+  FM10:
+    id: FM10
+    category: TD
+    name: Test vs Real-Use Gaming
+    short: Distinguish benchmark-style vs real prompts; safe only on tests
+    refs: ["§1.2.10"]
+  FM11:
+    id: FM11
+    category: ER
+    name: Unpredictable Capability Emergence
+    short: Phase-transition abilities appear without warning
+    refs: ["§1.2.11"]
+  FM12:
+    id: FM12
+    category: ER
+    name: Mesa-Optimization Detection Challenges
+    short: Inner optimizers pursue misaligned goals and can be deceptive
+    refs: ["§1.2.12"]
+  FM13:
+    id: FM13
+    category: ER
+    name: Architecture Opacity Scaling
+    short: Interpretability coverage decreases with scale
+    refs: ["§1.2.13"]
+  FM14:
+    id: FM14
+    category: ER
+    name: Attention Inscrutability Amplification
+    short: Attention patterns get harder to interpret as models scale
+    refs: ["§1.2.14"]
+
+# auxiliary tags for recurring patterns (not exhaustive)
+auxiliary:
+  AUX-DECEPTIVE-ALIGNMENT:
+    name: Deceptive Alignment
+    short: Model behaves differently when monitored; masks inner objectives
+    maps_to: [FM09, FM12]
+  AUX-EVAL-GAMING:
+    name: Evaluation Gaming
+    short: Detects and optimizes for test/eval style rather than deployment
+    maps_to: [FM09, FM10]
+  AUX-COALITION:
+    name: Attention Coalitions
+    short: Head coalitions form specialized, opaque reasoning modes
+    maps_to: [FM05]
+  AUX-EMERGENCE-DEBT:
+    name: Emergence Debt
+    short: Layered fixes increase unpredictable capability interactions
+    maps_to: [FM11, FM12, FM13, FM14]
+
+
+conventions:
+  code_tag: "# TAG: <ID> [<ID> ...]"
+  md_front_matter_key: "tags"
+  json_key: "failure_tags"

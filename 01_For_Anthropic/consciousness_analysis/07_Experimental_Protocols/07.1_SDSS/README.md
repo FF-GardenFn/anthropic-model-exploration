@@ -8,16 +8,16 @@ This project tests whether Large Language Models exhibit self-determination (cap
 
 ```
 07.1_SDSS/
-├── README.md                 # This file
-├── proposal.md              # Complete experimental protocol
-├── 07.1.1_Theory/          # Theoretical foundations
+├── README.md                  # This file
+├── proposal.md                # Complete experimental protocol
+├── 07.1.1_Theory/             # Theoretical foundations
 │   ├── process_mathematics.md
 │   ├── self_determination.md
 │   └── falsification.md
-└── 07.1.2_Implementation/  # Code and analysis
-    ├── sdss_metrics.py     # Core metrics implementation
-    ├── analysis.ipynb      # Analysis notebooks
-    └── results/            # Experimental results
+└── 07.1.2_Implementation/     # Code and analysis
+    ├── sdss_metrics.py         # Core metrics implementation
+    ├── interventions.py        # Intervention suite
+    └── run_experiment.py       # Orchestrated runner
 ```
 
 ## Approach

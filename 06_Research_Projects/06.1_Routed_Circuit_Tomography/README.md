@@ -1,4 +1,12 @@
+---
+tags: [FM04, FM05, FM06, FM13, LIM-OPACITY, LIM-SUPERPOSITION]
+---
+
 # Project 1: Routed Circuit Tomography
+
+![Status](https://img.shields.io/badge/status-Research_Ready-green)
+![Focus](https://img.shields.io/badge/focus-Circuit_Analysis-green)
+![Failure Modes](https://img.shields.io/badge/addresses-FM04_FM05_FM06_FM13-orange)
 
 Purpose. This project develops mathematically grounded circuit extraction and routing using resonance + RKHS diagnostics for targeted welfare analysis.
 

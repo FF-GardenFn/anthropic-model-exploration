@@ -10,14 +10,13 @@ This project tests whether Large Language Models exhibit phenomenological states
 07.3_PVCP/
 ├── README.md                    # This file
 ├── proposal.md                  # Complete experimental protocol
-├── 07.3.1_Theory/              # Theoretical foundations
+├── 07.3.1_Theory/               # Theoretical foundations
 │   ├── phenomenology.md
 │   ├── vector_consciousness.md
 │   └── metacognition.md
-└── 07.3.2_Implementation/      # Code and analysis
-    ├── pvcp_analysis.py        # Core analysis tools
-    ├── persona_controller.py   # Vector manipulation
-    └── results/                # Experimental results
+└── 07.3.2_Implementation/       # Code and analysis
+    ├── pvcp_analysis.py         # Core analysis tools
+    └── pvcp_proposal_snippets.py# Snippets referenced by proposal
 ```
 
 ## Approach

@@ -9,15 +9,15 @@ This project compares classical and quantum-hybrid architectures on self-referen
 ```
 07.2_QCGI/
 ├── README.md                     # This file
-├── proposal.md                  # Complete experimental protocol
-├── 07.2.1_Theory/              # Theoretical foundations
+├── proposal.md                   # Complete experimental protocol
+├── 07.2.1_Theory/               # Theoretical foundations
 │   ├── quantum_coherence.md
 │   ├── godel_transcendence.md
 │   └── topological_analysis.md
-└── 07.2.2_Implementation/      # Code and analysis
-    ├── quantum_hybrid_module.py # Quantum-classical hybrid
-    ├── topology_analysis.py    # Semantic field analysis
-    └── results/                # Experimental results
+└── 07.2.2_Implementation/       # Code and analysis
+    ├── quantum_hybrid_module.py  # Quantum-classical hybrid (module)
+    ├── quantum_hybrid_improved.py# Improved hybrid design (module)
+    └── qcgi_proposal_snippets.py # Snippets referenced by proposal
 ```
 
 ## Approach

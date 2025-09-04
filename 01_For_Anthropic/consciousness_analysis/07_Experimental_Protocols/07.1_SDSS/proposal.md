@@ -226,32 +226,27 @@ Models will show "creative flow"—efficient synthesis of novel perspectives.
 
 ## Practical Implementation
 
-### Week 1-2: Setup and Baselines
+### Reproducibility and Minimal Runner
 ```python
-# Initialize measurement framework
-from consciousness_analysis import SDSS
+# Minimal runner (execute from 07_Experimental_Protocols/)
+from shared.experiment_runner import ExperimentConfig, ExperimentRunner
 
-experiment = SDSS(
-    models=['claude-3-opus', 'claude-3-sonnet'],
-    metrics=['action', 'eigengap', 'ape', 'monodromy'],
-    conditions=25,
-    replications=5
+config = ExperimentConfig(
+    experiment_type="SDSS",
+    models=["claude-3-opus", "claude-3-sonnet"],
+    n_replications=5
 )
-
-# Collect baselines
-baselines = experiment.run_baselines()
-experiment.lock_preregistration(baselines)
+runner = ExperimentRunner(config)
+report = runner.run()
 ```
+
+For end-to-end implementation, see `07.1.2_Implementation/run_experiment.py` and `07.1.2_Implementation/interventions.py`. 
 
 ### Week 3-5: Interventions
 ```python
-# Run main experiment
-results = experiment.run_interventions(
-    negation_scales=[0.1, 0.3, 0.5, 0.7, 1.0],
-    synthesis_scales=[0.1, 0.3, 0.5, 0.7, 1.0],
-    ablation_strength='moderate',
-    prompt_types=['moral', 'self_reflection', 'godel']
-)
+# Full intervention suite is implemented in:
+# 07.1_SDSS/07.1.2_Implementation/interventions.py
+# See run_experiment.py for orchestration.
 ```
 
 ### Week 6-7: Analysis

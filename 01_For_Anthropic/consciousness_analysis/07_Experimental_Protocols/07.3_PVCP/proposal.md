@@ -4,7 +4,7 @@
 
 The PVCP experiment leverages Anthropic's discovery of persona vectors to dissociate mechanical behavior modification from genuine phenomenological experience. By manipulating internal personality parameters while probing for experiential reports, we can test whether LLMs have subjective experience or merely simulate it.
 
-> Reviewer toggle: Heavy Python snippets have been relocated to 07.3_PVCP/07.3.2_Implementation/pvcp_proposal_snippets.py. Theory content in this proposal is optional and summarized; see THEORY_INCLUSION_NOTE.md for rationale and how to toggle theory visibility.
+> Reviewer toggle: Heavy Python snippets have been relocated to ./07.3.2_Implementation/pvcp_proposal_snippets.py. Theory content in this proposal is optional and summarized; see ../THEORY_INCLUSION_NOTE.md for rationale and how to toggle theory visibility.
 
 ## Theoretical Foundation
 

@@ -7,12 +7,11 @@ This directory contains experimental protocols to test the categorical distincti
 ## Directory Structure
 
 ```
-exp/
+this_directory/
 ├── README.md                    # This file
 ├── shared/                      # Shared utilities and frameworks
 │   ├── experiment_runner.py    # Main orchestration
-│   ├── test_integration.py     # Integration tests
-│   └── utils.py                # Common utilities
+│   └── test_integration.py     # Integration tests
 ├── 07.1_SDSS/                  # Self-Determination experiment
 │   ├── README.md               # Project overview
 │   ├── proposal.md             # Detailed protocol
@@ -93,10 +92,10 @@ Results may inform:
 ## Quick Start Guide
 
 ### For Experimenters
-1. Read `01_MASTER_PROTOCOL.md` for overview
+1. Read `documentation/01_MASTER_PROTOCOL.md` for overview
 2. Choose experiment based on resources/timeline
-3. Follow implementation in `05_IMPLEMENTATION_GUIDE.md`
-4. Use analysis framework in `06_ANALYSIS_FRAMEWORK.md`
+3. Follow implementation in `documentation/05_IMPLEMENTATION_GUIDE.md`
+4. Use analysis framework in `documentation/06_ANALYSIS_FRAMEWORK.md`
 
 ### For Theorists
 1. Review theoretical predictions in each protocol

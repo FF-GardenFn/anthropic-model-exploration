@@ -1,4 +1,12 @@
+---
+tags: [FM01, FM07, FM09, FM10, FM12, LIM-OBJ-MISALIGN, AUX-DECEPTIVE-ALIGNMENT, AUX-EVAL-GAMING]
+---
+
 # Project 2: Proof-Carrying Commitments
+
+![Status](https://img.shields.io/badge/status-Research_Ready-green)
+![Focus](https://img.shields.io/badge/focus-Commitment_Verification-green)
+![Failure Modes](https://img.shields.io/badge/addresses-FM01_FM07_FM09_FM10_FM12-orange)
 
 Purpose. This project develops an RKHS-motivated framework for attesting safety-related commitments via spectral and operator diagnostics.
 

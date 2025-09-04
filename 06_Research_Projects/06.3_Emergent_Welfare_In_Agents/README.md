@@ -1,4 +1,12 @@
+---
+tags: [FM08, FM11, FM14, LIM-OPACITY, AUX-EMERGENCE-DEBT]
+---
+
 # Emergent Welfare in Long-Context Agents
+
+![Status](https://img.shields.io/badge/status-Research_Ready-green)
+![Focus](https://img.shields.io/badge/focus-Long_Context_Welfare-green)
+![Failure Modes](https://img.shields.io/badge/addresses-FM08_FM11_FM14-orange)
 
 Purpose. This project investigates welfare-relevant behaviors that emerge specifically in extended interactions and develops low‑cost, targeted interventions. It complements Project 1 (Routed Circuit Tomography) and Project 2 (Proof-Carrying Commitments) by focusing on temporal dynamics and long‑context monitoring.
 

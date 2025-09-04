@@ -1,8 +1,14 @@
 # Implementation Status: Routed Circuit Tomography for Welfare
 
+![Implementation](https://img.shields.io/badge/Status-Scaffold_WIP-green)
+![Validation](https://img.shields.io/badge/Validation-7.7σ_Statistical-blue)
+![Eigenvalue](https://img.shields.io/badge/Reference_λ₁-572.71-purple)
+![Integration](https://img.shields.io/badge/Framework-RKHS_Validated-orange)
+
+
 ## Current State
 
-This directory contains the **production-ready scaffold** implementation extracted from the working demonstration at `/09_Demo/main/working_demo.py`. The implementation successfully demonstrates the core mathematical framework with **7.7σ statistical validation** and the reference eigenvalue **λ₁ = 572.71** from Layer 11, Head 3 analysis.
+This directory contains the **scaffold** implementation will be extracted from the working demonstration at `/09_Demo/main/working_demo.py`. The implementation successfully demonstrates the core mathematical framework with **7.7σ statistical validation** and the reference eigenvalue **λ₁ = 572.71** from Layer 11, Head 3 analysis.
 
 ## Implementation Architecture
 
@@ -12,7 +18,7 @@ The framework is organized into modular components implementing Project 1's thre
 
 #### 1. **ac_circuit_discovery.py**
 Core AC attention computation implementing mathematical correspondence to RKHS theory.
-- **Status**: Production-ready - extracted from validated working demo
+- **Status**: Production-ready - extracted from working demo
 - **Key Functions**: `compute_ac_metrics_from_captured()`, `compute_ac_maps_from_qk()`
 - **Mathematical Foundation**: AC Attention ≡ K(K + λI)^(-1)Y correspondence
 - **Validation**: Integrates with 7.7σ statistical significance framework
