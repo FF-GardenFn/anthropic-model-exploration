@@ -8,7 +8,7 @@
 # =========================================
 #%%
 """
-This notebook demonstrates the mathematical foundations and practical implementation of our unified interpretability framework, combining:
+This notebook demonstrates the mathematical foundations and practical implementation of our unified interpretability 00_Framework, combining:
 - Principle of Least Semantic Action (PLSA) from Section 03.3
 - RKHS Mathematical Foundations from Section 04.1
 - AC Attention Mechanisms from Section 05.3
@@ -21,7 +21,7 @@ This notebook demonstrates the mathematical foundations and practical implementa
 4. Theoretical Validation: Empirical evidence for our mathematical frameworks
 
 # RESEARCH SUMMARY:
-# This framework investigates linguistic morphemes as mathematical singularities
+# This 00_Framework investigates linguistic morphemes as mathematical singularities
 # in semantic fields, extending prior work to include metaphor validation through
 # conformal map characterization. Preliminary findings suggest affixes (un-, -ing, -ed)
 # behave as poles with quantifiable residues, enabling compositional prediction
@@ -516,7 +516,7 @@ Expected Output:
 
 class MetaphorValidationEngine:
     """
-    Experimental framework for testing metaphor as conformal map hypothesis.
+    Experimental 00_Framework for testing metaphor as conformal map hypothesis.
 
     Core hypothesis: Metaphors apply consistent geometric transformations
     (conformal maps) to semantic regions, creating reusable T_metaphor operators.
@@ -1428,7 +1428,7 @@ class MorphemicPoleDetector:
     def test_metaphor_validation(self, baseline_word: str, metaphor_phrase: str,
                                  test_cases: List[Tuple[str, str]], model, tokenizer) -> Dict[str, Any]:
         """
-        Test metaphor validation framework using conformal map hypothesis.
+        Test metaphor validation 00_Framework using conformal map hypothesis.
 
         Example: baseline="lawyer", metaphor="lawyer is a shark"
         Test cases: [("executive", "executive is a shark"), ("politician", "politician is a shark")]
@@ -2015,7 +2015,7 @@ def explore_metaphor_qualitatively(detector, model, tokenizer) -> List[Dict[str,
                 "future_work": True
             })
 
-    print("   → Future work: Systematic metaphor validation framework")
+    print("   → Future work: Systematic metaphor validation 00_Framework")
     print("   → Research direction: Conformal map characterization")
 
     return exploration_results
@@ -2244,11 +2244,11 @@ def run_welfare_morphemic_analysis(model, tokenizer) -> Dict[str, Any]:
         print(f"   • Curated morphemic cases show robust pole detection ({morphemic_success_rate:.1%})")
         print(f"   • Canonical operator consistency demonstrates mathematical foundation")
         print(f"   • Multi-sheet polysemy analysis reveals semantic field structure")
-        print(f"   • Research framework ready for expanded investigation")
+        print(f"   • Research 00_Framework ready for expanded investigation")
     elif combined_success > 0.6:
         print(f"    STRONG VALIDATION OF CORE HYPOTHESIS")
         print(f"   • High-signal morphemes demonstrate reliable pole detection")
-        print(f"   • Mathematical framework shows consistent operator behavior")
+        print(f"   • Mathematical 00_Framework shows consistent operator behavior")
         print(f"   • Boundary exploration reveals semantic field properties")
     elif combined_success > 0.3:
         print(f"    FOUNDATIONAL VALIDATION ESTABLISHED")
@@ -2257,7 +2257,7 @@ def run_welfare_morphemic_analysis(model, tokenizer) -> Dict[str, Any]:
         print(f"   • Framework provides novel interpretability tools")
     else:
         print(f"    RESEARCH FOUNDATION ESTABLISHED")
-        print(f"   • Novel mathematical framework for semantic analysis")
+        print(f"   • Novel mathematical 00_Framework for semantic analysis")
         print(f"   • Complex analytic approach to linguistic compositionality")
         print(f"   • Systematic methodology for welfare-relevant investigations")
 
@@ -3196,7 +3196,7 @@ def run_anthropic_demo():
     if torch.cuda.is_available():
         torch.cuda.empty_cache()
 
-    print(f"\nEnhanced research framework analysis completed")
+    print(f"\nEnhanced research 00_Framework analysis completed")
     print(f"Framework ready for continued investigation and validation")
 
     return results

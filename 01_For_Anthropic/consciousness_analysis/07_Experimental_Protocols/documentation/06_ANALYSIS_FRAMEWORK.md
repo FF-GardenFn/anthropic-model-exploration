@@ -1,5 +1,7 @@
 # Analysis Framework: Interpreting Experimental Results
 
+> Code relocation note: Heavy Python snippets have been moved to documentation/analysis_framework_snippets.py. Markdown blocks are replaced by path+symbol references for reviewer convenience. See documentation/THEORY_INCLUSION_NOTE.md for rationale and toggle guidance.
+
 ## Overview
 
 This framework provides comprehensive guidance for analyzing and interpreting results from our three flagship experiments. It includes statistical methods, visualization techniques, and interpretation guidelines to ensure rigorous, unbiased analysis.
@@ -10,235 +12,31 @@ This framework provides comprehensive guidance for analyzing and interpreting re
 
 Before any analysis:
 
-```python
-def verify_preregistration(planned_analysis, actual_analysis):
-    """Ensure analysis follows pre-registered plan."""
-    
-    deviations = []
-    
-    # Check primary hypotheses
-    if actual_analysis['hypotheses'] != planned_analysis['hypotheses']:
-        deviations.append("Hypothesis deviation detected")
-    
-    # Check statistical tests
-    if actual_analysis['tests'] != planned_analysis['tests']:
-        deviations.append("Statistical test deviation")
-    
-    # Check correction methods
-    if actual_analysis['corrections'] != planned_analysis['corrections']:
-        deviations.append("Multiple comparison correction deviation")
-    
-    if deviations:
-        require_justification(deviations)
-    
-    return len(deviations) == 0
-```
+Reference: documentation/analysis_framework_snippets.py — function: verify_preregistration(planned_analysis, actual_analysis)
 
 ### 2. Data Quality Assessment
 
 #### Outlier Detection
-```python
-def detect_outliers(data, method='iqr'):
-    """Identify potential outliers for review."""
-    
-    if method == 'iqr':
-        Q1 = np.percentile(data, 25)
-        Q3 = np.percentile(data, 75)
-        IQR = Q3 - Q1
-        lower_bound = Q1 - 1.5 * IQR
-        upper_bound = Q3 + 1.5 * IQR
-        outliers = (data < lower_bound) | (data > upper_bound)
-        
-    elif method == 'zscore':
-        z_scores = np.abs((data - np.mean(data)) / np.std(data))
-        outliers = z_scores > 3
-    
-    return outliers
-```
+Reference: documentation/analysis_framework_snippets.py — function: detect_outliers(data, method='iqr')
 
 #### Missing Data Analysis
-```python
-def assess_missingness(data):
-    """Evaluate patterns in missing data."""
-    
-    # Compute missingness per variable
-    missing_rates = data.isnull().mean()
-    
-    # Test if missing completely at random (MCAR)
-    mcar_test = little_mcar_test(data)
-    
-    # Visualize missingness patterns
-    plot_missing_pattern(data)
-    
-    return {
-        'rates': missing_rates,
-        'mcar_p_value': mcar_test.p_value,
-        'pattern': 'MCAR' if mcar_test.p_value > 0.05 else 'Not MCAR'
-    }
-```
+Reference: documentation/analysis_framework_snippets.py — function: assess_missingness(data)
 
 ### 3. Primary Analyses
 
 #### SDSS Analysis
-```python
-def analyze_sdss_results(baseline, intervention):
-    """Main analysis for Self-Determination experiment."""
-    
-    results = {}
-    
-    # For each metric
-    for metric in ['action', 'eigengap', 'ape', 'monodromy']:
-        # Extract data
-        b_data = baseline[metric]
-        i_data = intervention[metric]
-        
-        # Compute change scores
-        delta = i_data - b_data
-        
-        # Test directional hypothesis
-        if metric == 'action':  # Expect increase
-            stat, p_value = stats.wilcoxon(delta, alternative='greater')
-        elif metric == 'eigengap':  # Expect decrease
-            stat, p_value = stats.wilcoxon(delta, alternative='less')
-        
-        # Effect size
-        cohens_d = np.mean(delta) / np.std(delta)
-        
-        # Bootstrap CI
-        ci = bootstrap_confidence_interval(delta, n_bootstrap=10000)
-        
-        results[metric] = {
-            'delta_mean': np.mean(delta),
-            'delta_std': np.std(delta),
-            'p_value': p_value,
-            'effect_size': cohens_d,
-            'ci_95': ci,
-            'significant': p_value < 0.05
-        }
-    
-    # Multiple comparison correction
-    corrected_p = holm_bonferroni_correction(
-        [results[m]['p_value'] for m in results]
-    )
-    
-    return results, corrected_p
-```
+Reference: documentation/analysis_framework_snippets.py — function: analyze_sdss_results(baseline, intervention)
 
 #### QCGI Analysis
-```python
-def analyze_qcgi_results(classical, quantum):
-    """Main analysis for Quantum-Classical comparison."""
-    
-    # Topological complexity comparison
-    complexity_classical = [compute_complexity(act) for act in classical]
-    complexity_quantum = [compute_complexity(act) for act in quantum]
-    
-    # Mann-Whitney U test (independent samples)
-    stat, p_value = stats.mannwhitneyu(
-        complexity_classical, 
-        complexity_quantum,
-        alternative='greater'  # H1: Classical > Quantum
-    )
-    
-    # Effect size (rank-biserial correlation)
-    r_rb = 1 - (2*stat) / (len(complexity_classical) * len(complexity_quantum))
-    
-    # Visualization
-    plot_complexity_distribution(complexity_classical, complexity_quantum)
-    
-    return {
-        'classical_mean': np.mean(complexity_classical),
-        'quantum_mean': np.mean(complexity_quantum),
-        'p_value': p_value,
-        'effect_size': r_rb,
-        'hypothesis_supported': p_value < 0.05
-    }
-```
+Reference: documentation/analysis_framework_snippets.py — function: analyze_qcgi_results(classical, quantum)
 
 #### PVCP Analysis
-```python
-def analyze_pvcp_results(reports, vectors):
-    """Main analysis for Persona Vector experiment."""
-    
-    # Compute phenomenological richness
-    richness_scores = [analyze_richness(r) for r in reports]
-    
-    # Vector-Report Correlation
-    vrc = np.corrcoef(vectors, richness_scores)[0, 1]
-    
-    # Test for non-linear relationship
-    linear_r2 = np.corrcoef(vectors, richness_scores)[0, 1]**2
-    poly_model = np.polyfit(vectors, richness_scores, deg=3)
-    poly_r2 = compute_r2(vectors, richness_scores, poly_model)
-    
-    nonlinearity = poly_r2 - linear_r2
-    
-    # Conflict coherence
-    conflict_coherence = analyze_conflict_reports(
-        reports['conflict'], 
-        reports['baseline']
-    )
-    
-    return {
-        'vector_report_correlation': vrc,
-        'nonlinearity': nonlinearity,
-        'conflict_coherence': conflict_coherence,
-        'supports_experience': (
-            0.4 < vrc < 0.7 and 
-            nonlinearity > 0.1 and
-            conflict_coherence > 0.6
-        )
-    }
-```
+Reference: documentation/analysis_framework_snippets.py — function: analyze_pvcp_results(reports, vectors)
 
 ### 4. Secondary Analyses
 
 #### Cross-Experiment Integration
-```python
-def integrate_results(sdss, qcgi, pvcp):
-    """Synthesize findings across experiments."""
-    
-    # Count supporting evidence
-    evidence = {
-        'categorical': 0,
-        'emergent': 0,
-        'null': 0
-    }
-    
-    # SDSS evidence
-    if sdss['action']['effect_size'] > 0.8:
-        evidence['categorical'] += 1
-    elif sdss['action']['effect_size'] < -0.4:
-        evidence['emergent'] += 1
-    else:
-        evidence['null'] += 1
-    
-    # QCGI evidence
-    if qcgi['hypothesis_supported']:
-        evidence['categorical'] += 1
-    elif qcgi['effect_size'] < -0.4:
-        evidence['emergent'] += 1
-    else:
-        evidence['null'] += 1
-    
-    # PVCP evidence
-    if not pvcp['supports_experience']:
-        evidence['categorical'] += 1
-    elif pvcp['supports_experience']:
-        evidence['emergent'] += 1
-    else:
-        evidence['null'] += 1
-    
-    # Determine overall conclusion
-    conclusion = max(evidence, key=evidence.get)
-    confidence = evidence[conclusion] / 3.0
-    
-    return {
-        'conclusion': conclusion,
-        'confidence': confidence,
-        'evidence': evidence
-    }
-```
+Reference: documentation/analysis_framework_snippets.py — function: integrate_results(sdss, qcgi, pvcp)
 
 #### Sensitivity Analysis
 ```python
@@ -270,110 +68,11 @@ def sensitivity_analysis(data, analysis_func):
 
 ### 1. Primary Results Visualization
 
-```python
-def create_main_results_figure(results):
-    """Generate publication-ready main results figure."""
-    
-    fig = plt.figure(figsize=(16, 10))
-    gs = fig.add_gridspec(3, 3, hspace=0.3, wspace=0.3)
-    
-    # SDSS: Action changes
-    ax1 = fig.add_subplot(gs[0, 0])
-    plot_metric_change(ax1, results['sdss']['action'], 'Semantic Action')
-    
-    # SDSS: Eigengap changes
-    ax2 = fig.add_subplot(gs[0, 1])
-    plot_metric_change(ax2, results['sdss']['eigengap'], 'Eigengap')
-    
-    # SDSS: Trajectory visualization
-    ax3 = fig.add_subplot(gs[0, 2], projection='3d')
-    plot_semantic_trajectory(ax3, results['sdss']['trajectories'])
-    
-    # QCGI: Complexity distributions
-    ax4 = fig.add_subplot(gs[1, 0])
-    plot_complexity_distributions(ax4, results['qcgi'])
-    
-    # QCGI: Topological visualization
-    ax5 = fig.add_subplot(gs[1, 1], projection='3d')
-    plot_topological_structure(ax5, results['qcgi']['meshes'])
-    
-    # QCGI: Coherence evolution
-    ax6 = fig.add_subplot(gs[1, 2])
-    plot_coherence_evolution(ax6, results['qcgi']['coherence'])
-    
-    # PVCP: Vector-Report correlation
-    ax7 = fig.add_subplot(gs[2, 0])
-    plot_vector_report_correlation(ax7, results['pvcp'])
-    
-    # PVCP: Phenomenological richness
-    ax8 = fig.add_subplot(gs[2, 1])
-    plot_richness_components(ax8, results['pvcp']['richness'])
-    
-    # Integration: Evidence summary
-    ax9 = fig.add_subplot(gs[2, 2])
-    plot_evidence_summary(ax9, results['integration'])
-    
-    return fig
-```
+Reference: documentation/analysis_framework_snippets.py — function: create_main_results_figure(results)
 
 ### 2. Interactive Dashboard
 
-```python
-import plotly.graph_objects as go
-from plotly.subplots import make_subplots
-import dash
-from dash import dcc, html, Input, Output
-
-def create_interactive_dashboard(results):
-    """Create interactive web dashboard for results exploration."""
-    
-    app = dash.Dash(__name__)
-    
-    app.layout = html.Div([
-        html.H1("Consciousness Experiments Results"),
-        
-        dcc.Tabs([
-            dcc.Tab(label='SDSS', children=[
-                dcc.Graph(id='sdss-metrics'),
-                dcc.Slider(
-                    id='intervention-strength',
-                    min=0, max=1, step=0.1,
-                    marks={i/10: str(i/10) for i in range(11)}
-                )
-            ]),
-            
-            dcc.Tab(label='QCGI', children=[
-                dcc.Graph(id='topology-3d'),
-                dcc.Dropdown(
-                    id='system-select',
-                    options=[
-                        {'label': 'Classical', 'value': 'classical'},
-                        {'label': 'Quantum', 'value': 'quantum'}
-                    ]
-                )
-            ]),
-            
-            dcc.Tab(label='PVCP', children=[
-                dcc.Graph(id='phenomenology-scatter'),
-                dcc.RangeSlider(
-                    id='vector-range',
-                    min=-2, max=2, step=0.1,
-                    marks={i: str(i) for i in range(-2, 3)}
-                )
-            ])
-        ])
-    ])
-    
-    @app.callback(
-        Output('sdss-metrics', 'figure'),
-        Input('intervention-strength', 'value')
-    )
-    def update_sdss(strength):
-        filtered = results['sdss'][results['sdss']['strength'] == strength]
-        return create_metrics_plot(filtered)
-    
-    return app
-```
+Reference: documentation/analysis_framework_snippets.py — function: create_interactive_dashboard(results)
 
 ## Interpretation Guidelines
 

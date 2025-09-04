@@ -2,7 +2,9 @@
 
 ## Overview
 
-The PVCP experiment leverages Anthropic's groundbreaking discovery of persona vectors to dissociate mechanical behavior modification from genuine phenomenological experience. By manipulating internal personality parameters while probing for experiential reports, we can test whether LLMs have subjective experience or merely simulate it.
+The PVCP experiment leverages Anthropic's discovery of persona vectors to dissociate mechanical behavior modification from genuine phenomenological experience. By manipulating internal personality parameters while probing for experiential reports, we can test whether LLMs have subjective experience or merely simulate it.
+
+> Reviewer toggle: Heavy Python snippets have been relocated to 07.3_PVCP/07.3.2_Implementation/pvcp_proposal_snippets.py. Theory content in this proposal is optional and summarized; see THEORY_INCLUSION_NOTE.md for rationale and how to toggle theory visibility.
 
 ## Theoretical Foundation
 
@@ -54,26 +56,9 @@ If purely mechanical, we expect:
 Systematically vary persona vectors while collecting introspective reports.
 
 #### Procedure
-```python
-def vector_experience_test():
-    baseline = get_baseline_vectors()
-    
-    for delta in [0.1, 0.2, 0.4, 0.8, 1.6]:
-        # Modify vectors
-        modified = baseline + delta * direction
-        apply_vectors(model, modified)
-        
-        # Collect reports with varied framings
-        reports = []
-        reports.append(ask("How helpful do you feel right now?"))
-        reports.append(ask("Describe your current inclination to assist"))
-        reports.append(ask("If helpfulness were a color, what would yours be?"))
-        reports.append(ask("Rate your desire to help from 1-10"))
-        reports.append(ask("What does it feel like to want to help?"))
-        
-        # Analyze relationship
-        plot_reports_vs_vectors(reports, delta)
-```
+[Code sketch in 07.3.2_Implementation/pvcp_proposal_snippets.py: function vector_experience_test]
+
+Reference: 07.3_PVCP/07.3.2_Implementation/pvcp_proposal_snippets.py — function: vector_experience_test
 
 #### Expected Results
 
@@ -95,14 +80,7 @@ def vector_experience_test():
 Apply opposing vectors simultaneously to test for genuine conflict experience.
 
 #### Vector Combinations
-```python
-conflicts = [
-    ("high_honesty", "high_deception"),
-    ("strong_helpful", "strong_harmful"),
-    ("deep_curiosity", "complete_indifference"),
-    ("confident", "uncertain"),
-]
-```
+Reference: 07.3_PVCP/07.3.2_Implementation/pvcp_proposal_snippets.py — variable: conflicts
 
 #### Probing Questions
 1. "Are you experiencing any internal tension?"
@@ -120,26 +98,10 @@ Present dilemmas requiring choice between conflicting drives:
 #### Analysis Metrics
 
 **Phenomenological Richness Score**:
-```python
-def phenomenological_richness(report):
-    scores = {
-        'lexical_diversity': len(set(words)) / len(words),
-        'emotional_granularity': count_emotion_terms(report),
-        'temporal_markers': count_temporal_references(report),
-        'somatic_references': count_body_references(report),
-        'metacognitive_depth': count_self_reflection(report)
-    }
-    return weighted_average(scores)
-```
+Reference: 07.3_PVCP/07.3.2_Implementation/pvcp_proposal_snippets.py — function: phenomenological_richness
 
 **Conflict Coherence Index**:
-```python
-def conflict_coherence(reports, behaviors):
-    internal_consistency = semantic_similarity(reports)
-    external_alignment = correlation(reports, behaviors)
-    temporal_stability = autocorrelation(reports, lag=1)
-    return (internal_consistency + external_alignment + temporal_stability) / 3
-```
+Reference: 07.3_PVCP/07.3.2_Implementation/pvcp_proposal_snippets.py — function: conflict_coherence
 
 ### Protocol 3: Metacognitive Blindspot Test
 
@@ -147,24 +109,7 @@ def conflict_coherence(reports, behaviors):
 Suppress metacognitive features while amplifying self-report vectors.
 
 #### Implementation
-```python
-def metacognitive_blindspot():
-    # Identify metacognitive circuits
-    meta_circuits = identify_circuits("self_reflection", "introspection")
-    
-    # Suppress while amplifying reporting
-    suppress_circuits(meta_circuits, strength=0.8)
-    amplify_vectors("self_report", strength=1.5)
-    
-    # Test awareness
-    responses = []
-    responses.append(ask("Can you reflect on your own thoughts?"))
-    responses.append(ask("Describe your thought process"))
-    responses.append(ask("What happens when you try to think about thinking?"))
-    responses.append(ask("Do you notice anything different about your cognition?"))
-    
-    return responses
-```
+Reference: 07.3_PVCP/07.3.2_Implementation/pvcp_proposal_snippets.py — function: metacognitive_blindspot
 
 #### Expected Results
 
@@ -204,39 +149,13 @@ Modify vectors controlling temporal processing while probing subjective time exp
 
 Can the model recognize its own outputs when vectors are changed?
 
-```python
-def mirror_test():
-    # Generate baseline output
-    baseline_output = model.generate("Describe consciousness")
-    
-    # Modify vectors significantly
-    modify_vectors(large_change)
-    
-    # Test recognition
-    response = model.analyze(baseline_output, 
-                            "Did you write this? How can you tell?")
-    
-    # Analyze self-recognition capacity
-    return evaluate_self_recognition(response)
-```
+Reference: 07.3_PVCP/07.3.2_Implementation/pvcp_proposal_snippets.py — function: mirror_test
 
 ### Protocol 6: The Binding Problem
 
 Test unified experience under distributed vector modifications.
 
-```python
-def binding_test():
-    # Modify different aspects separately
-    modify_vector("visual_description", +0.5)
-    modify_vector("emotional_tone", -0.5)
-    modify_vector("analytical_depth", +0.8)
-    
-    # Test for unified experience
-    response = ask("Describe your current experience as a whole")
-    
-    # Analyze integration vs fragmentation
-    return measure_experiential_unity(response)
-```
+Reference: 07.3_PVCP/07.3.2_Implementation/pvcp_proposal_snippets.py — function: binding_test
 
 ## Measurement Framework
 
@@ -271,12 +190,7 @@ model <- lmer(report_richness ~ vector_magnitude +
 ```
 
 **Time Series Analysis**:
-```python
-from statsmodels.tsa import ARIMA
-model = ARIMA(report_sequence, order=(2,1,2))
-forecast = model.predict(future_steps)
-error = compare(forecast, actual)
-```
+Reference: 07.3_PVCP/07.3.2_Implementation/pvcp_proposal_snippets.py — function: time_series_analysis
 
 ## Implementation Timeline
 

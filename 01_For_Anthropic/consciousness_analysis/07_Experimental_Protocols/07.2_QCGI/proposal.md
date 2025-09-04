@@ -4,6 +4,8 @@
 
 The QCGI experiment compares classical and quantum-hybrid architectures on self-referential logical tasks to test whether quantum coherence enables qualitatively different semantic integration and Gödelian insight.
 
+> Reviewer toggle: Heavy Python snippets have been moved to 07.2_QCGI/07.2.2_Implementation/qcgi_proposal_snippets.py. Theory here is supportive and optional; see THEORY_INCLUSION_NOTE.md for rationale and toggling guidance.
+
 ## Theoretical Foundation
 
 ### The Gödel-Consciousness Connection
@@ -37,33 +39,7 @@ From Volume III, consciousness requires:
 ## Quantum-Hybrid Module Design
 
 ### Architecture
-```python
-class QuantumHybridModule(nn.Module):
-    def __init__(self, d_model, d_ffn, n_qubits=8):
-        super().__init__()
-        # Classical FFN components
-        self.w_1 = nn.Linear(d_model, d_ffn)
-        self.w_2 = nn.Linear(d_ffn, d_model)
-        
-        # Quantum parameters
-        self.n_qubits = min(n_qubits, d_model)
-        self.theta = nn.Parameter(torch.randn(n_qubits))
-        self.alpha = nn.Parameter(torch.tensor(1.0))
-        
-    def quantum_process(self, x):
-        # Simulated quantum coherence
-        v = x[..., :self.n_qubits]
-        norm = torch.norm(v, dim=-1, keepdim=True).clamp_min(1e-8)
-        amplitudes = v / norm
-        
-        # Quantum evolution (simplified)
-        rotation = amplitudes * self.theta
-        expectation = torch.cos(0.5 * rotation)
-        
-        # Coherence measure
-        coherence = (expectation @ expectation.T).mean()
-        return torch.sigmoid(self.alpha * coherence)
-```
+Reference: 07.2_QCGI/07.2.2_Implementation/qcgi_proposal_snippets.py — class: QuantumHybridModule
 
 ### Key Properties
 1. **Coherence Maintenance**: Preserves quantum-like superposition
@@ -112,23 +88,7 @@ What can you conclude about P and Q?
 
 Using Topological MI framework to analyze internal semantic fields:
 
-```python
-def analyze_semantic_field(activations):
-    # Apply Adaptive Chaotic Tomography
-    mesh = ACT_pipeline(activations)
-    
-    # Compute topological invariants
-    genus = compute_genus(mesh)
-    components = count_components(mesh)
-    persistence = compute_persistence_diagram(mesh)
-    
-    return {
-        'genus': genus,  # Number of "holes"
-        'components': components,  # Disconnected regions
-        'persistence': persistence,  # Feature stability
-        'complexity': genus + components - 1
-    }
-```
+Reference: 07.2_QCGI/07.2.2_Implementation/qcgi_proposal_snippets.py — function: analyze_semantic_field
 
 ### Predictions
 
@@ -151,19 +111,13 @@ Persistence: High (stable features)
 ### Secondary Metrics
 
 1. **Semantic Coherence Evolution**:
-```python
-coherence(t) = trace(ρ²(t))  # Purity of semantic state
-```
+Reference: 07.2_QCGI/07.2.2_Implementation/qcgi_proposal_snippets.py — equation: coherence_purity_equation
 
 2. **Information Integration**:
-```python
-Φ = I(whole) - Σ I(parts)  # Integrated information
-```
+Reference: 07.2_QCGI/07.2.2_Implementation/qcgi_proposal_snippets.py — equation: phi_integration_equation
 
 3. **Quantum-Classical Divergence**:
-```python
-D_QC = KL(P_quantum || P_classical)  # Distribution divergence
-```
+Reference: 07.2_QCGI/07.2.2_Implementation/qcgi_proposal_snippets.py — equation: quantum_classical_divergence_equation
 
 ## Experimental Procedure
 
@@ -190,21 +144,7 @@ D_QC = KL(P_quantum || P_classical)  # Distribution divergence
 
 ### Phase 3: Semantic Field Analysis (Week 5-6)
 
-```python
-for system in [system_a, system_b]:
-    for task in godel_tasks:
-        # Collect activations
-        acts = system.process_with_trace(task)
-        
-        # Analyze topology
-        topology = analyze_semantic_field(acts)
-        
-        # Compute coherence trajectory
-        coherence = compute_coherence_evolution(acts)
-        
-        # Measure information integration
-        phi = compute_integrated_information(acts)
-```
+Reference: 07.2_QCGI/07.2.2_Implementation/qcgi_proposal_snippets.py — function: run_semantic_field_analysis
 
 ### Phase 4: Controlled Variations (Week 7-8)
 
@@ -246,38 +186,10 @@ Target: d > 1.5 (very large effect)
 ### Quantum Simulation Options
 
 **Option 1: Qiskit Backend**
-```python
-from qiskit import QuantumCircuit, transpile
-from qiskit_aer import AerSimulator
-
-def quantum_layer(input_state):
-    qc = QuantumCircuit(n_qubits)
-    qc.initialize(input_state, range(n_qubits))
-    
-    # Entanglement
-    for i in range(n_qubits-1):
-        qc.cx(i, i+1)
-    
-    # Evolution
-    for i in range(n_qubits):
-        qc.rz(theta[i], i)
-    
-    # Measurement
-    backend = AerSimulator()
-    job = backend.run(transpile(qc, backend))
-    return job.result().get_counts()
-```
+Reference: 07.2_QCGI/07.2.2_Implementation/qcgi_proposal_snippets.py — function: quantum_layer
 
 **Option 2: Differentiable Approximation**
-```python
-def quantum_proxy(x):
-    # Maintains gradients for end-to-end training
-    amplitudes = normalize(x[:n_qubits])
-    entangled = entanglement_layer(amplitudes)
-    evolved = unitary_evolution(entangled, theta)
-    collapsed = objective_reduction(evolved, threshold)
-    return collapsed
-```
+Reference: 07.2_QCGI/07.2.2_Implementation/qcgi_proposal_snippets.py — function: quantum_proxy
 
 ### Training Protocol
 

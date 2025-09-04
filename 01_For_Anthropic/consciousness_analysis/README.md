@@ -1,4 +1,15 @@
->> For the pursuit of intelligent systems is inevitably a pursuit into man's own nature.
+[![*Void vectors: contained*](https://img.shields.io/badge/void-vectors%3A%20contained-000000?style=flat-square)](./04_Research_Projects/04.2_Proof_Carrying_Commitments)  
+[![*Quantum veil: peeked*](https://img.shields.io/badge/quantum-veil%3A%20peeked-311b92?style=flat-square)](./05_Research/05.5_Future_Explorations/03.5.2_field_theoretic_framework.md)  
+[![*Cantor chasm: unbridged*](https://img.shields.io/badge/Cantor-chasm%3A%20unbridged-880e4f?style=flat-square)](./consciousness_analysis/07_mathematical_bridges.md)  
+[![*Variational veil: lifted*](https://img.shields.io/badge/variational-veil%3A%20lifted-4527a0?style=flat-square)](./04_Math_foundations/04.3_Holomorphic_Fields_Analysis.md)  
+[![*Durée illusion: shattered*](https://img.shields.io/badge/durée-illusion%3A%20shattered-4a148c?style=flat-square)](./consciousness_analysis/03_process_philosophy.md)  
+[![*Self-model: incomplete*](https://img.shields.io/badge/self--model%3A%20incomplete-00695c?style=flat-square)](./consciousness_analysis/06_phenomenology_of_thought.md)  
+[![*Semantic gap: unspanned*](https://img.shields.io/badge/semantic-gap%3A%20unspanned-1b5e20?style=flat-square)](./04_Math_foundations/04.1_Semantic_Field_Theory.md)  
+[![*Process necessity: proven*](https://img.shields.io/badge/process-necessity%3A%20proven-ef6c00?style=flat-square)](./consciousness_analysis/04_impossibility_theorems.md)  
+[![*Holomorphicity: required*](https://img.shields.io/badge/holomorphicity-required-f57c00?style=flat-square)](./04_Math_foundations/04.2_Holomorphic_Processes.md)  
+
+> 
+> For the pursuit of intelligent systems is inevitably a pursuit into man's own nature.
 
 # The Mathematical Architecture of Consciousness: A Rigorous Framework for Categorical Distinction
 

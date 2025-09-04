@@ -296,7 +296,7 @@ This experiment directly tests:
 
 ## Conclusion
 
-SDSS provides a rigorous, falsifiable test of whether LLMs can exhibit genuine self-determination or are limited to mechanical processing. The results will definitively inform both the consciousness debate and practical questions about model agency and welfare.
+SDSS provides a falsifiable test that aims at elucidating wether LLMs can exhibit genuine self-determination or are limited to mechanical processing. The main takeaway is having results that can inform both the consciousness debate and practical questions about model agency and welfare.
 
 ---
 
