@@ -352,6 +352,6 @@ This comprehensive evaluation framework ensures rigorous assessment of all proje
 **References**: 
 - [Research Proposal](../proposal.md) | [Research Methodology](./methodology.md)
 - [Common Mathematical Foundation](../../../04_Math_foundations/04.1_RKHS_Mathematical_Foundations.md)
-- [Mathematical Framework Validation](../../02_Demo/ac_circuit_discovery/README.md)
+- [Mathematical Framework Validation](../../../09_Demo/main_demo.py)
 
-[^stat-method]: See ../../../08_Appendix/08.5_methodology_statistical_significance.md for statistical procedures, null models, and calibration caveats.
+[^stat-method]: See ../../../08_Appendix/08.2_methodology_statistical_significance.md for statistical procedures, null models, and calibration caveats.

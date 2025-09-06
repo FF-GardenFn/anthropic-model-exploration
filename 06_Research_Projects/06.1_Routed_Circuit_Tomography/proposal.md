@@ -96,23 +96,10 @@ The method employs kernel projection operators with mathematically bounded inter
 ### Computational Strategy
 Selective circuit routing maintains assessment quality with reduced computation compared to full model evaluation approaches.
 
-## Anticipated Challenges and Mitigation
+## Limitations and Mitigations
 
-### Challenge 1: Computational Complexity
-**Issue**: Eigendecomposition may not scale to large models  
-**Mitigation**: Implement approximate methods (Lanczos, randomized SVD) with accuracy bounds
-
-### Challenge 2: Circuit Generalization
-**Issue**: Circuits may not generalize across different welfare contexts  
-**Mitigation**: Multi-domain validation with mathematical stability analysis across contexts
-
-### Challenge 3: Router Training Complexity
-**Issue**: Training effective routers for circuit selection may be challenging  
-**Mitigation**: Leverage GCV optimization for automatic parameter selection with mathematical bounds
-
-### Challenge 4: Integration Complexity
-**Issue**: Integration with existing Anthropic infrastructure may require significant modification  
-**Mitigation**: Design modular architecture with clear API boundaries for seamless integration
+A consolidated treatment of risks, limitations, and mitigation strategies is provided here:
+- [Limitations and Mitigations (Project 06.1)](./limitations_and_mitigations.md)
 
 ## Expected Outcomes
 
@@ -134,6 +121,6 @@ Results and claims are reported under specified datasets/models/configurations a
 **References**: 
 - [Common Mathematical Foundation](../../04_Math_foundations/04.1_RKHS_Mathematical_Foundations.md)
 - [Field-Theoretic Framework](../../05_Research/05.5_Future_Explorations/05.5.2_field_theoretic_framework.md)
-- [AC Circuit Discovery Demo](../../02_Demo/02.2_Bonus_Demo/)
+- [Demo](../../09_Demo/09.1_main_demo.ipynb)
 
-[^stat-method]: See [Methodology for Statistical Significance and Validation](../../08_Appendix/08.5_methodology_statistical_significance.md) for statistical validation frameworks, null models, and limitations of significance testing claims.
+[^stat-method]: See [Methodology for Statistical Significance and Validation](../../08_Appendix/08.2_methodology_statistical_significance.md) for statistical validation frameworks, null models, and limitations of significance testing claims.

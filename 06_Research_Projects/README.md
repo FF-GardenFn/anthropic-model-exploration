@@ -4,11 +4,11 @@ tags: [FM01, FM04, FM05, FM06, FM07, FM08, FM09, FM10, FM11, FM12, FM13, FM14, L
 
 # Research Projects: Mathematical Foundations for Model Exploration
 
-![Status](https://img.shields.io/badge/status-Production_Ready-green)
+![Status](https://img.shields.io/badge/status-Research_Ready-green)
 ![Projects](https://img.shields.io/badge/projects-RCT_PCC_EWA-blue)
 ![Failure Modes](https://img.shields.io/badge/addresses-11_of_14_modes-orange)
 
-> Summary: Three research directions building on RKHS circuit analysis for welfare applications
+> Summary: Three complementary research projects applying mathematical frameworks to AI safety challenges
 
 ## Overview
 
@@ -39,12 +39,13 @@ The mathematical foundation enables three complementary approaches to model beha
 
 **Approach**: Replace heuristic circuit ranking (CRI ≥ 0.7) with statistical significance testing[^stat-method]
 
-**Notes on expected effects (conditional on setup)**: selective routing with task‑tuned thresholds; see Appendix for procedures[^stat-method]
+**Critical Connection**: Enables targeted layer selection for AVAT experiments (specifically layers 15-20 identification) through mathematical circuit analysis, providing principled foundation for attention visualization and analysis tasks.
 
 **Mathematical Foundation**: 
 - RKHS projection operators for surgical intervention
 - Representer theorem provides bounds on behavior
 - GCV optimization for automatic parameter selection
+- Circuit discovery methods identify computationally relevant attention layers
 
 ### [Project 2: Proof-Carrying Commitments](./06.2_Proof_Carrying_Commitments/)
 
@@ -52,12 +53,13 @@ The mathematical foundation enables three complementary approaches to model beha
 
 **Approach**: Encode commitments as constraints in RKHS spaces with spectral monitoring
 
-**Notes on expected effects (conditional on setup)**: detection of commitment violations with task‑tuned procedures; see Appendix for interpretation[^stat-method]
+**Critical Connection**: Builds directly on the AHOS Framework (04.5) categorical verification approach, extending fibration-based behavioral conformances to commitment monitoring with compositional guarantees and formal verification.
 
 **Mathematical Foundation**:
 - Spectral analysis of attention patterns for commitment consistency
 - Hat matrix bounds for predictable intervention effects  
 - Eigenvalue monitoring for systematic anomaly detection
+- Categorical fibrations provide compositional verification framework
 
 ### [Project 3: Emergent Welfare in Long-Context Agents](./06.3_Emergent_Welfare_In_Agents/)
 
@@ -65,12 +67,13 @@ The mathematical foundation enables three complementary approaches to model beha
 
 **Approach**: Combined spectral–semantic analysis integrating RKHS tools with morphemic tracking
 
-**Notes on expected effects (conditional on setup)**: detection of welfare‑relevant changes across extended interactions; thresholds and procedures are task‑tuned and reported in the Appendix[^stat-method]
+**Critical Connection**: Implements the Wasserstein-RKHS Bridge (04.6) for optimal transport theory integration, enabling systematic analysis of semantic drift through mathematical measure theory and distributional comparisons across context lengths.
 
 **Mathematical Foundation**:
 - Morphemic field analysis for semantic drift detection
 - Temporal integration of spectral and compositional monitoring
 - Context‑adaptive mathematical tools
+- Wasserstein distance metrics for semantic evolution tracking
 
 ## Unified Methodology
 
@@ -96,9 +99,15 @@ All projects leverage shared mathematical components:
 ### Integration Architecture
 
 ```
-Input → Circuit Discovery → Commitment Verification → Long-Context Monitoring → Output
-       ↓                 ↓                      ↓                        ↓
-   RKHS Analysis → Spectral Monitoring → Morphemic Tracking → Welfare Assessment
+Research Pipeline: Mathematical Foundations → Experimental Protocols → Safety Applications
+
+Circuit Tomography → AVAT Layer Selection (15-20) → Attention Visualization
+       ↓
+RKHS Analysis → Categorical Verification (AHOS) → Commitment Monitoring  
+       ↓
+Spectral Monitoring → Wasserstein Bridge (04.6) → Long-Context Assessment
+       ↓
+Mathematical Framework → Practical Implementation → AI Safety Research
 ```
 
 ### Quick Start
@@ -131,4 +140,4 @@ Input → Circuit Discovery → Commitment Verification → Long-Context Monitor
 
 ---
 
-[^stat-method]: See Appendix: [Methodology for Statistical Significance and Validation](../08_Appendix/08.5_methodology_statistical_significance.md) for definitions, null models, and caveats.
+[^stat-method]: See Appendix: [Methodology for Statistical Significance and Validation](../08_Appendix/08.2_methodology_statistical_significance.md) for definitions, null models, and caveats.

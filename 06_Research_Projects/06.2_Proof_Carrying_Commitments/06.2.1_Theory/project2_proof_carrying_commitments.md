@@ -82,7 +82,7 @@ If **kernel ridge regression equivalence validation** does not show statistical 
 - Evaluate production-scale behavior under specified metrics across attack vectors
 - **Deliverable**: Production mathematical safety system with formal verification and spectral monitoring
 
-## Technical Innovation: RKHS-Validated AC/DC Bridge
+## Technical Framework: RKHS-Validated AC/DC Bridge
 
 This project leverages the **mathematical AC/DC unified framework** with RKHS theoretical foundation[^stat-method]:
 - **RKHS AC Discovery**: Identifies mathematical commitment circuits using kernel eigenvalue analysis ([see demo results](./examples/volatility_analysis/))[^stat-method]
@@ -138,7 +138,7 @@ Some runs reported +12.3% improvement in causal reasoning and -78% reduction in 
 - **After**: **Mathematical analysis** of harmful behavior through RKHS projection operators[^stat-method]
 
 ### Mathematical Safety Guarantees
-This project now provides **unprecedented mathematical rigor** in AI safety:
+This project provides **systematic mathematical rigor** in AI safety:
 - **Formal Verification**: Representer theorem constrains solutions to training manifold[^stat-method]
 - **Surgical Intervention**: Hat matrix projections enable precise safety modifications without side effects  
 - **Automatic Optimization**: GCV eliminates manual safety-performance trade-off tuning
@@ -146,4 +146,4 @@ This project now provides **unprecedented mathematical rigor** in AI safety:
 
 *This project explores transitions from reactive monitoring to **mathematical architectural analysis**, using **kernel ridge regression approaches** to analyze safety commitments with **mathematical constraint analysis** at the language model's core reasoning level.*[^stat-method]
 
-[^stat-method]: Complete statistical methodology and validation protocols: [../../../08_Appendix/08.5_methodology_statistical_significance.md](../../../08_Appendix/08.5_methodology_statistical_significance.md)
+[^stat-method]: Complete statistical methodology and validation protocols: [../../../08_Appendix/08.2_methodology_statistical_significance.md](../../../08_Appendix/08.2_methodology_statistical_significance.md)

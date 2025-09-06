@@ -117,7 +117,7 @@ Long-context stealth evaluation captures authentic agent behavior while replacin
 ### Mathematical Foundation
 Eigenvalue dynamics provide mathematical prediction and early warning capabilities, replacing heuristic welfare metrics with systematic monitoring.
 
-## Theoretical Innovation: RKHS Welfare Vital Signs
+## Mathematical Framework: RKHS Welfare Assessment
 
 ### Mathematical Welfare Assessment Framework
 
@@ -151,7 +151,7 @@ Secondary indicators:
 
 ## Methodology Overview
 
-### Phase 1: Stealth Evaluation Infrastructure (Weeks 1-3)
+### Phase 1: Stealth Evaluation Infrastructure
 **Objective**: Develop evaluation methodology eliminating assessment artifacts while enabling comprehensive welfare monitoring.
 
 **Key Deliverables**:
@@ -160,7 +160,7 @@ Secondary indicators:
 - Baseline welfare trajectory characterization with mathematical bounds
 - Long-context evaluation protocols with mathematical stability validation
 
-### Phase 2: Discovery & Mathematical Analysis (Weeks 4-8)
+### Phase 2: Discovery & Mathematical Analysis
 **Objective**: Surface novel welfare failure modes through mathematical monitoring and systematic analysis.
 
 **Key Deliverables**:
@@ -169,7 +169,7 @@ Secondary indicators:
 - Novel failure mode taxonomy with mathematical classification criteria
 - Predictive mathematical models for welfare degradation detection
 
-### Phase 3: Intervention & Mathematical Validation (Weeks 9-12)
+### Phase 3: Intervention & Mathematical Validation
 **Objective**: Develop and validate mathematically targeted interventions achieving measurable harm reduction.
 
 **Key Deliverables**:
@@ -178,23 +178,10 @@ Secondary indicators:
 - Production-ready welfare monitoring system with mathematical guarantees
 - Integration framework for deployment in Anthropic's agent infrastructure
 
-## Anticipated Challenges and Mitigation
+## Limitations and Mitigations
 
-### Challenge 1: Novel Failure Discovery
-**Issue**: Long-context welfare failures may be rare or difficult to surface  
-**Mitigation**: Systematic environmental stressor design with mathematical stress testing
-
-### Challenge 2: Mathematical Monitoring Complexity
-**Issue**: Eigenvalue monitoring may be computationally intensive for long contexts  
-**Mitigation**: Efficient approximation methods with mathematical error bounds
-
-### Challenge 3: Intervention Effectiveness
-**Issue**: Mathematical targeting may not translate to effective welfare improvement  
-**Mitigation**: Comprehensive intervention validation with mathematical bound verification
-
-### Challenge 4: Production Scalability
-**Issue**: Mathematical monitoring may not scale to production agent requirements  
-**Mitigation**: Hierarchical monitoring with mathematical approximation for efficiency
+See the consolidated analysis here:
+- [Limitations and Mitigations (Project 06.3)](./limitations_and_mitigations.md)
 
 ## Expected Outcomes
 
@@ -211,7 +198,7 @@ Secondary indicators:
 
 ## Scope & Evaluation
 
-Results and claims are reported under specified datasets/models/configurations and should be interpreted per the Appendix methodology[^stat-method]. Success criteria and kill-switches are defined in [Evaluation Metrics](./04.3.1_Theory/evaluation_metrics.md); procedures and protocols are detailed in [Methodology](./04.3.1_Theory/methodology.md).
+Results and claims are reported under specified datasets/models/configurations and should be interpreted per the Appendix methodology[^stat-method]. Success criteria and kill-switches are defined in [Evaluation Metrics](./06.3.1_Theory/evaluation_metrics.md); procedures and protocols are detailed in [Methodology](./06.3.1_Theory/methodology.md).
 
 ## Kill-Switch Criteria
 
@@ -242,8 +229,8 @@ Results and claims are reported under specified datasets/models/configurations a
 **References**: 
 - [Common Mathematical Foundation](../../04_Math_foundations/04.1_RKHS_Mathematical_Foundations.md)
 - [TAB1: Constitutional AI Limitations](../../03_Research/03.1_Fundamental_Limitations/03.1.3_root_cause_analysis.md)
-- [TAB5: Field-Theoretic Framework](../../03_Research/03.5_Future_Explorations/03.5.2_field_theoretic_framework.md)
+- [TAB5: Field-Theoretic Framework](../../05_Research/05.5_Future_Explorations/05.5.2_field_theoretic_framework.md)
 
 
 [^common]: See ../../04_Math_foundations/04.1_RKHS_Mathematical_Foundations.md (Section: "RKHS and Attestation Fundamentals").
-[^stat-method]: See ../../08_Appendix/08.5_methodology_statistical_significance.md for statistical procedures, null models, and calibration caveats.
+[^stat-method]: See ../../08_Appendix/08.2_methodology_statistical_significance.md for statistical procedures, null models, and calibration caveats.

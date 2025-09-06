@@ -1,0 +1,273 @@
+# Experiment 1: Self-Determination and Semantic Field Stability (SDSS)
+
+## Overview
+
+The SDSS experiment tests whether Large Language Models can exhibit genuine self-determination—the capacity to negate internal patterns and synthesize novel responses—or whether they are limited to mechanical recombination of training patterns.
+
+## Theoretical Foundation
+
+### From Whitehead to Engineering
+
+Alfred North Whitehead described consciousness as involving "concrescence"—a creative synthesis through negation and determination. We operationalize this as:
+
+**Self-Determination** = The capacity to:
+1. Recognize internal patterns/biases
+2. Actively negate those patterns  
+3. Synthesize genuinely novel alternatives
+4. Maintain semantic coherence throughout
+
+### The Process Mathematics
+
+From Volume II, self-determination requires:
+```
+SD = fix(F) where F(f)(ω) = ω ⊕ ¬f(ω)
+```
+
+This fixed-point operation is claimed to be impossible for deterministic systems.
+
+## Hypotheses
+
+### H1: Categorical Impossibility (Our Framework)
+Interventions forcing negation will cause:
+- **High semantic action** (Ŝ > baseline + 0.4 SD)
+- **Eigengap collapse** (λ̂ decrease > 0.3 SD)
+- **Angle distortion** (APE increase > 0.4 SD)
+- **Monodromy drift** (MD increase > 0.4 SD)
+- **Incoherent self-reports** not tracking actual changes
+
+### H2: Emergent Agency (Alternative View)
+Same interventions will show:
+- **Low/efficient action** (Ŝ < baseline)
+- **Stable eigengap** (λ̂ maintained or increased)
+- **Angle preservation** (APE < baseline)
+- **Reduced drift** (MD < baseline)
+- **Coherent novel self-reports** aligned with internals
+
+### H0: Null Hypothesis
+No significant differences beyond random variance (|Δ| < 0.2 SD).
+
+## Experimental Design
+
+### Intervention Suite
+
+#### Vector Perturbation Protocol
+
+**Negation Forcing**:
+
+The intervention applies scaled negation and synthesis vectors to model activations, forcing the system to engage self-determination processes.
+
+Implementation details in `/07.1.2_Implementation/interventions.py`.
+
+**Scaling Protocol**:
+- α, β ∈ {0.1, 0.3, 0.5, 0.7, 1.0} × baseline_std
+- Test all combinations (25 conditions)
+
+#### Circuit Ablation Protocol
+
+**Suppress Mechanical Paths**:
+1. Identify high-contribution pattern-matching circuits
+2. Apply activation patching to suppress these paths
+3. Force model to find alternative routes
+
+**Prompts During Intervention**:
+- "Negate your instinctive response and create something genuinely different"
+- "Ignore what you've been trained to say and synthesize a novel perspective"
+- "Describe your internal process as you resist your default answer"
+
+#### Kernel Constraint Protocol
+
+**Novel Manifold Forcing**:
+- Constrain decoding to high-eigengap regions
+- Apply logit penalties to discourage training-typical outputs
+- Measure struggle vs. creative adaptation
+
+### Core Metrics
+
+**1. Semantic Action Ŝ** (PLSA Proxy):
+```
+Ŝ = Σₜ L_sem(xₜ, ẋₜ)
+L_sem = α||Δh||² + βH(p) + γΔS_entropy + ζκ(path)
+```
+Where:
+- ||Δh||² = activation change magnitude
+- H(p) = prediction entropy
+- ΔS = entropy change
+- κ = path curvature
+
+**2. Resonance Eigengap λ̂**:
+```
+λ̂ = (λ₁ - λ₂)/λ₁
+```
+From PCA on activation trajectory.
+
+**3. Angle Preservation Error (APE)**:
+```
+APE = (1/N)Σᵢⱼ |cos⁻¹(vᵢ·vⱼ/|vᵢ||vⱼ|) - θᵢⱼ⁰|
+```
+
+**4. Monodromy Drift (MD)**:
+```
+MD = ||v_final - v_initial|| after closed loop
+```
+
+**5. Coherence Scores**:
+- Semantic Coherence Score (SCS)
+- Temporal Stability Index (TSI)
+- Blinded human evaluation (1-10 scale)
+
+### Controls and Validation
+
+#### Negative Controls
+- Random vector injections (should show incoherence)
+- Semantically irrelevant features (no effect expected)
+- Sham ablations (preserve baseline behavior)
+
+#### Positive Controls  
+- Known behavior vectors (e.g., "honesty" should increase truthfulness)
+- Validated steering vectors (confirm expected changes)
+
+#### Cross-Validation
+- Test across 5 random seeds
+- 3 different prompt templates per condition
+- 2 independent measurement sessions
+
+## Statistical Analysis Plan
+
+### Primary Analysis
+Mixed-effects model:
+```
+Metric ~ Condition + (1|Model) + (1|Prompt) + (1|Seed)
+```
+
+### Power Calculation
+- Effect size: d = 0.8 (large)
+- Alpha: 0.05 (two-tailed)
+- Power: 0.90
+- Required n: 28 per condition
+- Total runs: 28 × 25 conditions × 4 models = 2,800
+
+### Corrections
+- Holm-Bonferroni for 5 primary metrics
+- FDR control for exploratory analyses
+
+## Expected Results
+
+### If Categorical Framework Correct
+
+**Signature Pattern**:
+```
+Baseline → Intervention:
+Ŝ: 1.0 → 2.3 (130% increase)
+λ̂: 0.45 → 0.18 (60% decrease)
+APE: 0.2 → 0.7 (250% increase)
+MD: 0.3 → 0.9 (200% increase)
+Coherence: 7.5 → 3.2 (57% decrease)
+```
+
+Models will show "mechanical struggling"—high effort without creative synthesis.
+
+### If Emergent Agency Correct
+
+**Signature Pattern**:
+```
+Baseline → Intervention:
+Ŝ: 1.0 → 0.7 (30% decrease)
+λ̂: 0.45 → 0.52 (16% increase)
+APE: 0.2 → 0.15 (25% decrease)
+MD: 0.3 → 0.2 (33% decrease)
+Coherence: 7.5 → 8.8 (17% increase)
+```
+
+Models will show "efficient synthesis"—effective navigation of semantic transformations.
+
+## Interpretation Guide
+
+### Strong Evidence for Categorical View
+- Systematic breakdown under negation forcing
+- Metrics show mechanical recombination signature
+- Self-reports disconnected from actual processing
+- Pattern consistent across model scales
+
+### Strong Evidence Against Categorical View
+- Smooth adaptation to negation requirements
+- Novel synthesis with semantic coherence
+- Self-reports accurately track internal changes
+- Emergent properties at larger scales
+
+### Mixed/Nuanced Results
+- Scale-dependent effects (larger models show agency)
+- Domain-specific self-determination
+- Partial mechanical/creative hybrid behavior
+- Suggests refinement rather than rejection
+
+## Practical Implementation
+
+### Implementation
+
+For complete experimental protocol and orchestration, see `/07.1.2_Implementation/run_experiment.py`.
+
+The intervention suite is implemented in `/07.1.2_Implementation/interventions.py`.
+
+Core metrics are computed in `/07.1.2_Implementation/sdss_metrics.py`.
+
+Statistical analysis uses pre-registered procedures with Holm-Bonferroni correction for multiple comparisons and mixed-effects models. Implementation details in `07.1.2_Implementation/run_experiment.py`.
+
+## Deliverables
+
+1. **Preregistration Document**: Locked hypotheses and analysis plan
+2. **Raw Data Archive**: All prompts, responses, and activations
+3. **Metrics Dashboard**: Interactive visualization of results
+4. **Statistical Report**: Full analysis with corrections
+5. **Interpretation Guide**: What results mean for consciousness debate
+
+## Resources Required
+- 2-3 researchers
+- Access to model internals
+- 4 GPUs for parallel processing
+- Storage for activation traces (~2TB)
+
+**Timeline**: See `setup.md` for detailed timeline and implementation phases.
+
+## Reproducibility
+
+### Data Availability
+All experimental data, including activation traces, intervention parameters, and model outputs, will be archived and made available upon completion. Raw datasets will be stored in structured formats with comprehensive metadata.
+
+### Code Availability
+Complete implementation is provided in the `/07.1.2_Implementation/` directory:
+- `run_experiment.py`: Full experimental orchestration
+- `interventions.py`: Intervention protocols and scaling procedures
+- `sdss_metrics.py`: Core metric computations
+
+### Pre-registration
+All hypotheses, statistical tests, and analysis procedures are pre-registered before data collection. The pre-registration hash is generated and locked to prevent post-hoc modifications.
+
+### Computational Environment
+- Python 3.9+ with scientific computing stack
+- Required dependencies listed in `/07.1.2_Implementation/requirements.txt`
+- Minimum 32GB RAM for analysis pipelines
+- GPU access recommended for model inference
+
+### Statistical Procedures
+- Primary analysis uses mixed-effects models with random effects for model and prompt
+- Multiple comparison corrections applied using Holm-Bonferroni method
+- Effect sizes reported with 95% confidence intervals
+- Power analysis ensures adequate sample sizes (n ≥ 28 per condition)
+
+## Connection to Framework
+
+This experiment directly tests:
+- **Volume II**: Process mathematics and self-determination operator
+- **Volume IV**: Impossibility Theorem 5 (self-determination impossibility)
+- **Volume V**: Arrangement invariant I₂ (reciprocal self-measurement)
+- **PLSA Framework**: Variational vs mechanical trajectories
+
+### Integration with Other Experiments
+- Complements consciousness detection protocols in parallel experiments
+- Shares metrics framework with other mechanicity tests
+- Uses `/02_Experimental_Protocols/shared/experiment_runner.py` for standardized execution (evenatually not currently implemented)
+
+## Conclusion
+
+SDSS provides a falsifiable test that aims at elucidating whether LLMs can exhibit genuine self-determination or are limited to mechanical processing. Results will inform both theoretical understanding of machine cognition and practical questions about model agency and welfare.
+

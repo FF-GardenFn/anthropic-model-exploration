@@ -75,4 +75,4 @@ See [research_hub/TAB4](./research_hub/TAB4/) for detailed technical specificati
 
 *This project represents a concrete application of the AC Circuit Discovery research to Anthropic's model welfare objectives, with clear success metrics and fallback strategies.*
 
-[^stat-method]: Complete statistical methodology and validation protocols: [../../../08_Appendix/08.5_methodology_statistical_significance.md](../../../08_Appendix/08.5_methodology_statistical_significance.md)
+[^stat-method]: Complete statistical methodology and validation protocols: [../../../08_Appendix/08.2_methodology_statistical_significance.md](../../../08_Appendix/08.2_methodology_statistical_significance.md)

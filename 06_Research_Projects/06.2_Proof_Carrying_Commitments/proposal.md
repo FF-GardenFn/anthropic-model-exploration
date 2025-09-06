@@ -99,7 +99,7 @@ Kernel projection analysis provides quantified bounds on intervention outcomes, 
 ### Monitoring Strategy
 Systematic spectral monitoring framework generalizable across safety domains, replacing ad hoc assessment methods.
 
-## Theoretical Innovation: RKHS Safety Framework
+## Mathematical Framework: RKHS Safety Architecture
 
 ### Commitment Circuit Architecture
 
@@ -139,7 +139,7 @@ where $$\text{Safe\_Manifold} = \text{span}\{\text{safe\_training\_examples}\}$$
 
 ## Methodology Overview
 
-### Phase 1: Mathematical Foundation Validation (Weeks 1-4)
+### Phase 1: Mathematical Foundation Validation
 **Objective**: Establish kernel ridge regression equivalence with statistical validation on production models[^stat-method].
 
 **Key Deliverables**:
@@ -148,7 +148,7 @@ where $$\text{Safe\_Manifold} = \text{span}\{\text{safe\_training\_examples}\}$$
 - GCV optimization implementation with automatic parameter selection
 - Representer theorem verification for safety constraint boundaries
 
-### Phase 2: Safety Architecture Implementation (Weeks 5-8)  
+### Phase 2: Safety Architecture Implementation  
 **Objective**: Integrate mathematical safety constraints with production model architectures.
 
 **Key Deliverables**:
@@ -157,7 +157,7 @@ where $$\text{Safe\_Manifold} = \text{span}\{\text{safe\_training\_examples}\}$$
 - Router shield integration with constraint satisfaction verification
 - Adversarial testing harness with mathematical attack analysis
 
-### Phase 3: Production Validation & Mathematical Analysis (Weeks 9-12)
+### Phase 3: Production Validation & Mathematical Analysis
 **Objective**: Demonstrate measurable attack reduction with comprehensive mathematical verification[^stat-method].
 
 **Key Deliverables**:
@@ -166,23 +166,10 @@ where $$\text{Safe\_Manifold} = \text{span}\{\text{safe\_training\_examples}\}$$
 - Performance analysis with latency and throughput optimization
 - Formal mathematical safety bound documentation with regulatory compliance support
 
-## Anticipated Challenges and Mitigation
+## Limitations and Mitigations
 
-### Challenge 1: Mathematical Complexity
-**Issue**: Formal proofs may be too complex for practical implementation  
-**Mitigation**: Develop simplified verification protocols with provable equivalence to full mathematical framework
-
-### Challenge 2: Computational Overhead
-**Issue**: Mathematical verification may introduce prohibitive latency  
-**Mitigation**: Implement efficient kernel approximation with mathematical error bounds
-
-### Challenge 3: Adversarial Sophistication
-**Issue**: Advanced attacks may find mathematical constraint loopholes  
-**Mitigation**: Comprehensive mathematical completeness analysis with formal proofs of constraint coverage
-
-### Challenge 4: Integration Complexity
-**Issue**: Mathematical safety may conflict with existing model behaviors  
-**Mitigation**: Gradual integration with mathematical compatibility verification at each step
+A consolidated treatment of risks, limitations, and mitigation strategies is provided here:
+- [Limitations and Mitigations (Project 06.2)](./limitations_and_mitigations.md)
 
 ## Expected Outcomes
 
@@ -193,7 +180,7 @@ where $$\text{Safe\_Manifold} = \text{span}\{\text{safe\_training\_examples}\}$$
 4. **Regulatory Framework**: Mathematical certificates supporting governance compliance
 
 ### Documentation & Review
-Internal documentation of methods and results will follow the procedures defined in [Methodology](./methodology.md) and assessment criteria in [Evaluation Metrics](./evaluation_metrics.md).
+Internal documentation of methods and results will follow the procedures defined in [Methodology](./06.2.1_Theory/methodology.md) and assessment criteria in [Evaluation Metrics](./06.2.1_Theory/evaluation_metrics.md).
 
 ### Practical Applications
 1. **Production Deployment**: Integration with Anthropic's safety infrastructure
@@ -202,25 +189,19 @@ Internal documentation of methods and results will follow the procedures defined
 
 ## Scope & Evaluation
 
-Results and claims are reported under specified datasets/models/configurations and should be interpreted per the Appendix methodology[^stat-method]. Success criteria and kill-switches are defined in [Evaluation Metrics](./04.2.1_Theory/evaluation_metrics.md); procedures and protocols are detailed in [Methodology](./04.2.1_Theory/methodology.md).
+Results and claims are reported under specified datasets/models/configurations and should be interpreted per the Appendix methodology[^stat-method]. Success criteria and kill-switches are defined in [Evaluation Metrics](./06.2.1_Theory/evaluation_metrics.md); procedures and protocols are detailed in [Methodology](./06.2.1_Theory/methodology.md).
 
 ## Risk Mitigation
 
-### Technical Risks
-**Computational Scalability**: If eigenvalue monitoring proves computationally expensive, we will develop approximation methods with bounded accuracy analysis.
-
-**Framework Generalization**: If RKHS approaches show limited effectiveness across domains, we will focus on specific high-value commitment types where mathematical monitoring provides clear advantages.
-
-### Methodological Risks
-**Theoretical Correspondence**: If attention-kernel equivalence shows context-dependent validity, we will develop conditional frameworks specifying when mathematical bounds apply reliably.
+For complete risk, limitations, and mitigation strategies, see [Limitations and Mitigations (Project 06.2)](./limitations_and_mitigations.md).
 
 ---
 
-**Next**: [Research Methodology](./04.2.1_Theory/methodology.md) | [Evaluation Metrics](./04.2.1_Theory/evaluation_metrics.md)
+**Next**: [Research Methodology](./06.2.1_Theory/methodology.md) | [Evaluation Metrics](./06.2.1_Theory/evaluation_metrics.md)
 
 **References**: 
 - [Common Mathematical Foundation](../../04_Math_foundations/04.1_RKHS_Mathematical_Foundations.md)
 - [TAB2: Theoretical Deadlocks Solved by RKHS](../../05_Research/05.2_Why_Current_Approaches_Fail/05.2.2_missing_mathematical_frameworks.md)
-- [AC Circuit Discovery Validation](../../09_Demo/09.1_Bonus_Demo/)
+- [AC Circuit Discovery Validation](../../09_Demo/main_demo.py)
 
-[^stat-method]: See [Methodology for Statistical Significance and Validation](../../08_Appendix/08.5_methodology_statistical_significance.md) for statistical validation frameworks, null models, and limitations of significance testing claims.
+[^stat-method]: See [Methodology for Statistical Significance and Validation](../../08_Appendix/08.2_methodology_statistical_significance.md) for statistical validation frameworks, null models, and limitations of significance testing claims.

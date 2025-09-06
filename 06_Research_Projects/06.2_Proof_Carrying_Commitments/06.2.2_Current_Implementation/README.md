@@ -3,7 +3,6 @@
 ![Implementation](https://img.shields.io/badge/Status-Theoretical_Development-yellow)
 ![Framework](https://img.shields.io/badge/Framework-RKHS_Constraints-blue)
 ![Components](https://img.shields.io/badge/Components-5_Modules-orange)
-![Timeline](https://img.shields.io/badge/Timeline-14_Weeks-purple)
 ![Integration](https://img.shields.io/badge/Dependencies-Mathematical_Foundations-red)
 
 ## Current State
@@ -109,7 +108,7 @@ Real-time eigenvalue monitoring for commitment stability tracking.
 - **RKHS Analysis**: From `04_Math_foundations/04.1_RKHS_Mathematical_Foundations.md`
 
 ### Statistical Framework Required
-- **Significance Testing**: From `08_Appendix/08.5_methodology_statistical_significance.md`
+- **Significance Testing**: From `08_Appendix/08.2_methodology_statistical_significance.md`
 - **Circuit Discovery**: Integration with AC attention analysis framework
 - **Validation Protocols**: Empirical testing methodology and confidence intervals
 

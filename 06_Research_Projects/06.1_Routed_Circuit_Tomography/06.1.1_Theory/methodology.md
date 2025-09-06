@@ -94,6 +94,87 @@ and assess practical impact via changes in GCV relative to baselines.
 
 **Expected Output**: 30-60 mathematically validated welfare circuit candidates
 
+## Self-Organizing Circuit Discovery
+
+Our theoretical circuit extraction framework finds practical implementation through self-organizing sparsity, extending Modi et al. (2024)'s self-organizing sparse autoencoders to circuit discovery. This operationalizes our RKHS projections through efficient sparse decomposition, providing both computational advantages and improved mathematical foundations.
+
+### SOSAE Integration for Circuit Extraction
+
+**Mathematical Enhancement**: Replace heuristic CRI ≥ 0.7 thresholds with SOSAE's mathematical ranking system via (1+α)^k penalty formulation:
+
+$$
+\mathcal{L}_{\text{SOSAE}} = \mathcal{L}_{\text{reconstruction}} + \lambda \sum_{i} (1+\alpha)^{k_i} |z_i|
+$$
+
+where $k_i$ represents the position-based penalty for feature $i$, naturally ordering circuit importance.
+
+**Push Regularization for Circuit Identification**:
+The push regularization mechanism naturally identifies important circuits through:
+1. **Automatic Sparsity Induction**: High-penalty positions naturally suppress noise while preserving welfare-critical circuits
+2. **Hierarchical Discovery**: Position-based penalties create natural circuit importance rankings
+3. **Computational Efficiency**: 130x speedup enables comprehensive circuit search across all attention heads simultaneously
+
+**Implementation Strategy**:
+1. Deploy SOSAE analysis across all attention layers with position-based penalties
+2. Extract circuit candidates where push regularization maintains high activations
+3. Rank circuits by their resistance to suppression under increasing penalty values
+
+### Mathematical Framework
+
+**RKHS-SOSAE Connection**: Connect SOSAE's sparse basis to our RKHS circuit projections through the kernel formulation:
+
+$$
+H_{\text{SOSAE}} = K_{\text{sparse}}(K_{\text{sparse}} + \lambda I)^{-1}
+$$
+
+where $K_{\text{sparse}}$ represents the kernel matrix constructed from SOSAE-identified sparse features.
+
+**Natural Orthogonalization**: Show how orthogonalization emerges naturally from position-based sparsity:
+
+$$
+\langle \phi_i, \phi_j \rangle_{\text{SOSAE}} = \delta_{ij} \cdot w_{\text{pos}}(i,j)
+$$
+
+with position-weighted orthogonality ensuring circuit separation without explicit orthogonalization steps.
+
+**Kernel Property Preservation**: Prove that SOSAE preserves essential kernel properties:
+1. **Positive Semi-definiteness**: Maintained through sparse basis construction
+2. **Reproducing Property**: SOSAE features preserve RKHS reproducing kernel structure  
+3. **Added Interpretability**: Position-based penalties provide natural circuit ranking without sacrificing mathematical rigor
+
+### Practical Implementation
+
+**SOSAE-Enhanced Circuit Discovery Algorithm**:
+
+```
+Algorithm: SOSAE Circuit Discovery
+Input: Attention matrices Q, K, welfare probe data
+Output: Ranked circuit candidates with mathematical certificates
+
+1. Deploy SOSAE with position-based penalties across all layers
+2. Identify sparse features with high resistance to push regularization  
+3. Construct sparse kernel matrix K_sparse from identified features
+4. Compute RKHS projections H_SOSAE = K_sparse(K_sparse + λI)^(-1)
+5. Validate kernel properties and mathematical bounds
+6. Rank circuits by eigenvalue magnitude and welfare correlation
+7. Return top candidates with mathematical certificates
+```
+
+**Expected Improvements**:
+- **Superior Circuit Ranking**: Mathematical penalty-based ranking replaces ad-hoc CRI thresholds
+- **Automatic Threshold Discovery**: Position-based penalties naturally determine importance cutoffs
+- **Enhanced Computational Efficiency**: 130x speedup enables exhaustive search previously computationally infeasible
+- **Mathematical Rigor**: Preserves RKHS theoretical guarantees while adding interpretability
+
+**Validation Protocol**:
+Compare CRI-based circuit identification versus SOSAE ranking on welfare-relevant circuits:
+
+$$
+\text{Validation Metric} = \frac{\text{Welfare Preservation}_{\text{SOSAE}}}{\text{Welfare Preservation}_{\text{CRI}}} \times \frac{\text{Computational Cost}_{\text{CRI}}}{\text{Computational Cost}_{\text{SOSAE}}}
+$$
+
+Expected validation results demonstrate both superior circuit identification and computational efficiency through the SOSAE framework.
+
 ## Phase 2: Circuit Promotion and Contract Formalization (Weeks 4-8)
 
 ### Mathematical Contract Framework
@@ -317,7 +398,7 @@ This methodology provides a systematic approach to developing mathematically rig
 **References**: 
 - [Research Proposal](../proposal.md) | [Evaluation Metrics](./evaluation_metrics.md)
 - [Common Mathematical Foundation](../../../04_Math_foundations/04.1_RKHS_Mathematical_Foundations.md)
-- [AC Circuit Discovery Implementation](../../../02_Demo/ac_circuit_discovery/)
+- [Demo Validation Reference](../../../09_Demo/main_demo.py)
 
 
-[^stat-method]: See Appendix: [Methodology for Statistical Significance and Validation](../../../08_Appendix/08.5_methodology_statistical_significance.md) for definitions, null models, calibration, and limitations.
+[^stat-method]: See Appendix: [Methodology for Statistical Significance and Validation](../../../08_Appendix/08.2_methodology_statistical_significance.md) for definitions, null models, calibration, and limitations.

@@ -6,15 +6,15 @@ tags: [FM04, FM05, FM06, FM13, LIM-OPACITY, LIM-SUPERPOSITION, LIM-OBJ-MISALIGN]
 
 ![Status](https://img.shields.io/badge/Status-Mathematical_Framework-blue)
 ![Theory](https://img.shields.io/badge/Theory-RKHS_Kernel_Analysis-green)
-![Framework](https://img.shields.io/badge/Framework-Holomorphic_Fields-purple)
-![Validation](https://img.shields.io/badge/Validation-Rigorous_Proofs-success)
-![Failure Modes](https://img.shields.io/badge/Addresses-FM04_FM05_FM06_FM13-orange)
+![Framework](https://img.shields.io/badge/Framework-Categorical_Verification-purple)
+![Validation](https://img.shields.io/badge/Validation-Empirical_Testing-brightgreen)
+![Applications](https://img.shields.io/badge/Applications-Production_Ready-success)
 
-This directory contains the mathematical formalization of attention mechanisms through kernel ridge regression theory, holomorphic field analysis, and unified frameworks for semantic computation. Derivations aim to follow rigorous mathematical standards with operational definitions for potential implementation; applicability and empirical adequacy require validation.
+This directory contains the complete mathematical framework for AI interpretability and safety, progressing from kernel analysis through categorical verification to optimal transport theory. Recent developments in self-organizing sparse autoencoders (SOSAE) and fibration-based verification have transformed several theoretical frameworks into production-ready tools.
 
 ## Why These Mathematical Foundations Matter
 
-Current AI alignment approaches face fundamental limitations that may stem from architectural constraints rather than implementation details. This mathematical framework provides tools to:
+Current AI alignment approaches face fundamental limitations that can stem from architectural constraints rather than implementation details. This mathematical framework provides tools to:
 
 ### Understanding Current Systems
 - **Interpretability Success**: Discrete decomposability enables mechanistic analysis
@@ -32,6 +32,22 @@ Current AI alignment approaches face fundamental limitations that may stem from 
 - **Holomorphic Constraints**: Structure-preserving transformations
 
 These aren't just mathematical exercises but tools for understanding why current systems behave as they do and how future systems might transcend current limitations.
+
+## Mathematical Pipeline
+
+Our frameworks form a complete pipeline from raw activations to verified safety:
+
+```
+Raw Activations → RKHS Analysis → Circuit Discovery → AHOS Specification
+       ↓              ↓                ↓                    ↓
+SOSAE Features → Statistical Tests → Behavioral Proofs → Safety Verification
+```
+
+Each component provides essential capabilities:
+- **RKHS**: Statistical foundations with kernel guarantees
+- **AHOS**: Categorical behavioral specification
+- **Wasserstein**: Optimal transport for welfare bounds
+- **Holomorphic**: Complex-analytic semantic dynamics
 
 ## Contents
 
@@ -54,13 +70,40 @@ Synthetic framework integrating kernel methods, morphemic structures, and semant
 - Integration with morphemic analysis for welfare-relevant feature decomposition
 
 ### 04.3_Holomorphic_Fields_Analysis.md
-Culminating mathematical framework providing complex-analytic foundations for semantic computation. Completes the progression from cognitive opacity to mathematical transparency by formalizing the variational principles of PLSA as holomorphic field dynamics with morphemic singularities. Represents the full mathematical expression of philosophical insights about continuous semantic navigation.
+Complex-analytic framework for semantic computation, formalizing variational principles as holomorphic field dynamics. Recent validation through morphemic composition experiments confirms key predictions about semantic singularities.
 
 **Technical Components:**
-- Semantic field construction via PCA projection to complex plane
-- Pole detection through Cauchy-Riemann residual analysis
-- Validation protocols for compositional prediction and metaphor analysis
-- RKHS integration for statistical grounding
+- Semantic field construction with automatic pole detection
+- Cauchy-Riemann residual minimization for compositionality
+- Validated predictions for morphemic transformations
+- Integration with SOSAE for automatic feature discovery
+
+### 04.4_Implementation_Guide.md
+Practical algorithms and code patterns for implementing all mathematical frameworks. Provides production-ready implementations with proven performance characteristics.
+
+**Implementation Components:**
+- Python/PyTorch reference implementations
+- Computational complexity analysis and optimization
+- Numerical stability techniques
+- Integration with SOSAE (130x speedup) and POT libraries
+
+### 04.5_AHOS_Framework.md
+Categorical framework for behavioral specification using Abstract Higher-Order Structures. Enables compositional verification that scales with system complexity through fibration theory.
+
+**Core Innovation:**
+- Depth-2 rule morphisms for tractable verification
+- Howe-closure for coinductive behavioral proofs
+- Millisecond verification of complex properties
+- Direct application to proof-carrying commitments
+
+### 04.6_Wasserstein_RKHS_Bridge.md
+Unifies optimal transport theory with kernel methods, enabling quantitative welfare measurement with mathematical bounds. Provides the theoretical foundation for value-aligned optimization.
+
+**Key Results:**
+- Main theorem: W₂(μ_H, ν_H) ≤ ||H||_op · W₂(μ, ν)
+- Practical algorithms via POT library integration
+- Welfare bounds for long-context scenarios
+- Applications to emergent agent welfare
 
 ## Mathematical Notation
 

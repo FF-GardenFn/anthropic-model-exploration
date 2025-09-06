@@ -60,7 +60,7 @@ If no novel failure mode is discovered after two rounds of expanded stressors, d
 - Validate ≥50% harm reduction on held-out test sets
 - **Deliverable**: Production-ready welfare monitoring and intervention system
 
-## Technical Innovation: RKHS Welfare Vital Signs
+## Technical Framework: RKHS Welfare Assessment
 
 ### Mathematical Welfare Monitoring
 This project introduces **"RKHS Welfare Vital Signs"** with mathematical precision:
@@ -91,7 +91,7 @@ We follow the statistical methodology described in the Appendix for assessing si
 - **[Feature Analysis Tools](./tools/neuronpedia_integration/)**: Automated interpretation of welfare signals
 - **[Research Hub](./research_hub/)**: Theoretical foundation for emergent behavior analysis
 
-## Highlights
+## Novel Contributions
 
 ### Stealth Evaluation Methodology
 - Probabilistic welfare probe integration removing evaluation artifacts
@@ -105,8 +105,8 @@ We follow the statistical methodology described in the Appendix for assessing si
 
 ---
 
-*This project could potentially addresses the critical gap in long-context safety evaluation, using the AC Circuit Discovery framework to monitor welfare in realistic extended interactions and develop targeted interventions that preserve both safety and utility.*
+*This project addresses the critical gap in long-context safety evaluation, using the AC Circuit Discovery framework to monitor welfare in realistic extended interactions and develop targeted interventions that preserve both safety and utility.*
 
 
 [^common]: See ../../../04_Math_foundations/04.1_RKHS_Mathematical_Foundations.md (Section: "RKHS and Attestation Fundamentals").
-[^stat-method]: See ../../../08_Appendix/08.5_methodology_statistical_significance.md for statistical procedures, null models, and calibration caveats.
+[^stat-method]: See ../../../08_Appendix/08.2_methodology_statistical_significance.md for statistical procedures, null models, and calibration caveats.

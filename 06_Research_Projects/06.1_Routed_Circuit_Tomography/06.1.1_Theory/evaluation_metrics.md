@@ -272,6 +272,6 @@ This  evaluation framework ensures a rigorous assessment of all project objectiv
 **References**: 
 - [Research Proposal](../proposal.md) | [Research Methodology](./methodology.md)
 - [Common Mathematical Foundation](../../../04_Math_foundations/04.1_RKHS_Mathematical_Foundations.md)
-- [Statistical Validation Framework](../../../02_Demo/ac_circuit_discovery/README.md)
+- [Demo Validation Reference](../../../09_Demo/main_demo.py)
 
-[^stat-method]: See Appendix: [Methodology for Statistical Significance and Validation](../../../08_Appendix/08.5_methodology_statistical_significance.md) for definitions, null models, corrections, and caveats.
+[^stat-method]: See Appendix: [Methodology for Statistical Significance and Validation](../../../08_Appendix/08.2_methodology_statistical_significance.md) for definitions, null models, corrections, and caveats.

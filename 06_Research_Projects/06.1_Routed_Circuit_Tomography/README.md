@@ -8,24 +8,38 @@ tags: [FM04, FM05, FM06, FM13, LIM-OPACITY, LIM-SUPERPOSITION]
 ![Focus](https://img.shields.io/badge/focus-Circuit_Analysis-green)
 ![Failure Modes](https://img.shields.io/badge/addresses-FM04_FM05_FM06_FM13-orange)
 
-Purpose. This project develops mathematically grounded circuit extraction and routing using resonance + RKHS diagnostics for targeted welfare analysis.
+## Purpose
 
-Contents
-- Proposal: ./proposal.md
-- Theory: 06.1.1_Theory/project1_routed_circuit_tomography.md
-- Methodology: 06.1.1_Theory/methodology.md
-- Evaluation Metrics: 06.1.1_Theory/evaluation_metrics.md
-- Current Implementation (if present): 06.1.2_Current_Implementation/
+This project develops mathematically rigorous circuit extraction and routing methods that enable targeted welfare analysis and support experimental protocols. The framework provides principled approaches to identifying computationally relevant attention layers and circuits.
 
-Methodological references
-- Common mathematical definitions (RKHS operators, diagnostics): ../../04_Math_foundations/04.1_RKHS_Mathematical_Foundations.md
-- Statistical procedures, null models, calibration and caveats: ../../08_Appendix/08.5_methodology_statistical_significance.md
+## Critical Experimental Connection: AVAT Layer Selection
 
-Relation to anthropic research program 
-- Relevance: Circuit tomography provides evidence for selecting and routing heads/mechanisms implicated in welfare‑relevant behavior.
-- If successful (specified setup): enables targeted analysis and reduced activation cost on tasks aligned with the job description’s evaluation focus.
+This circuit tomography framework directly enables the AVAT (Attention Visualization and Analysis Tasks) experimental protocols by providing mathematical methods for identifying layers 15-20 as computationally significant. The circuit extraction process:
 
+- **Layer Identification**: Uses eigenvalue analysis and spectral gap assessment to systematically identify attention layers with high computational relevance
+- **Mathematical Validation**: Replaces heuristic layer selection with statistical significance testing and RKHS-based stability analysis  
+- **Experimental Support**: Provides principled foundation for AVAT attention visualization tasks requiring focused layer analysis
 
-Scope & limitations
-- Results are reported under specified datasets/models/configurations; interpret per Appendix methodology.
-- Claims are framed as evidence under specified conditions; no publication or deployment claims are made here.
+## Project Structure
+
+- **Proposal**: [./proposal.md](./proposal.md) - Research framework and objectives
+- **Theory**: [06.1.1_Theory/project1_routed_circuit_tomography.md](./06.1.1_Theory/project1_routed_circuit_tomography.md) - Mathematical foundations
+- **Methodology**: [06.1.1_Theory/methodology.md](./06.1.1_Theory/methodology.md) - Implementation approach
+- **Evaluation**: [06.1.1_Theory/evaluation_metrics.md](./06.1.1_Theory/evaluation_metrics.md) - Assessment criteria
+- **Implementation**: [06.1.2_Current_Implementation/](./06.1.2_Current_Implementation/) - Code framework
+
+## Mathematical Foundations
+
+- **RKHS Theory**: [04.1_RKHS_Mathematical_Foundations.md](../../04_Math_foundations/04.1_RKHS_Mathematical_Foundations.md) - Core mathematical framework
+- **Statistical Methods**: [08.2_methodology_statistical_significance.md](../../08_Appendix/08.2_methodology_statistical_significance.md) - Validation procedures
+
+## Research Applications
+
+- **Circuit Analysis**: Provides systematic methods for identifying welfare-relevant computational pathways
+- **Layer Selection**: Enables principled identification of attention layers for experimental analysis
+- **Efficiency Optimization**: Supports targeted analysis with reduced computational requirements
+- **Experimental Protocols**: Mathematical foundation for AVAT and related attention analysis tasks
+
+## Implementation Scope
+
+Results and methodological approaches are developed under specified experimental conditions with careful attention to statistical validation and reproducibility standards as detailed in the Appendix methodology.

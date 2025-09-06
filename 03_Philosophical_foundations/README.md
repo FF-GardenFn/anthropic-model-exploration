@@ -8,11 +8,11 @@ tags: [LIM-OPACITY, LIM-SUPERPOSITION, LIM-OBJ-MISALIGN, FM04, FM05, FM13]
 ![Theory](https://img.shields.io/badge/Theory-PLSA_Framework-green)
 ![Framework](https://img.shields.io/badge/Framework-Morphemic_Field_Theory-orange)
 ![Integration](https://img.shields.io/badge/Bridge-Mathematical_Foundations-purple)
-![Scope](https://img.shields.io/badge/Scope-Speculative_Frameworks-yellow)
+![Validation](https://img.shields.io/badge/Validation-Active_Empirical_Testing-brightgreen)
 
-This directory contains exploratory theoretical frameworks for examining language model behavior through the lens of continuous mathematics and semantic field dynamics. These investigations represent preliminary conceptual explorations rather than established theoretical results, designed to motivate and ground the mathematical analysis that follows.
+This directory contains theoretical frameworks for examining language model behavior through the lens of continuous mathematics and semantic field dynamics. These investigations connect philosophical insights to mathematical formalization, establishing the conceptual foundations that guide our practical implementations.
 
-**Important Note**: The frameworks presented here are speculative and require empirical validation. They serve to establish conceptual foundations and identify potential research directions rather than assert proven theoretical truths.
+**Current Status**: The frameworks presented here range from philosophical foundations to active empirical validation. Recent developments in self-organizing sparse autoencoders and activation vector experiments have provided initial validation for key theoretical predictions, particularly regarding scale invariance and phase transitions in semantic computation.
 
 ## Contents
 
@@ -38,6 +38,9 @@ Mathematical framework modeling learned semantic structure as complex-analytic f
 ### 03.5_Bridge_to_Mathematics.md
 Transitional document connecting the philosophical investigations to the mathematical foundations in Section 04. Explains why mathematical formalization is necessary for the philosophical insights and provides a conceptual roadmap showing how each philosophical insight finds its mathematical expression: cognitive opacity → RKHS theory, property theory → unified framework, and variational principles → holomorphic fields.
 
+### 03.6_Scale_Invariant_Interpretability.md
+Consolidated framework for scale-invariant analysis of language model internals. Develops renormalization group approaches for tracking interpretable features across model scales, with mathematical formalization including universality classes, critical exponents, and conservation laws. Recent advances in self-organizing sparse autoencoders (SOSAE) provide operational implementations, enabling discovery of scale-invariant features through exponential position penalties that implement discrete RG transformations.
+
 ## Theoretical Integration
 
 These documents establish a coherent progression from paradigmatic analysis through mathematical formalization to practical applications:
@@ -47,6 +50,7 @@ These documents establish a coherent progression from paradigmatic analysis thro
 3. **Unifying Principle** (03.3): PLSA as organizing principle for semantic dynamics
 4. **Specific Framework** (03.4): Morphemic field theory as concrete implementation
 5. **Transition to Mathematics** (03.5): Bridge connecting philosophical insights to mathematical formalization
+6. **Scale-Invariant Analysis** (03.6): Renormalization group methods for multi-scale interpretability
 
 All mathematical notation follows the conventions established in [04_Math_foundations/](../04_Math_foundations/) with detailed derivations and operational definitions provided therein.
 

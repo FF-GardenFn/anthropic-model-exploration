@@ -77,4 +77,6 @@ data/
 Icon?
 
 # --- Project-specific ---
-
+get_structure.py
+BADGES_REFERENCE.md
+02_Experimental_Protocols/07.4_AVAT/07.4.1_Theory
